@@ -4,6 +4,42 @@
 PREPARE SPECIMENS
 =================
 
+PREPARE SPECIMENS begins with an OVERVIEW page that outlines the rest of the PREPARE workflow. 
+
+----
+SORT
+----
+
+The *SORT* stage assumes the user is beginning with an unsorted insect sample and can be skipped if specimens are arrayed. Presently, ONTOLOGY assumes the user is sequencing insects and other similarly-sized arthropods; ONTOLOGY will be expanded to support other taxa in future.
+
+Specimens should be sorted into two piles: small (below 3 mm) and large (above 3 mm). A printable size guide is provided to facilitate sorting. Small specimens (below 3 mm) are placed directly into a DNA extraction plate.
+
+-----
+MOUNT
+-----
+
+*MOUNT* guides the user through arraying specimens for a plate. The most straightforward approach is to array small and large specimens separately and not mix them within a plate, though mixed plates are possible and are the case shown by the software.
+
+A filled ONTOLOGY Metadata Template (`*`.xlsx) is required for analysis of each plate. It is typically most straightforward to download and fill the sheet while arraying specimens. 
+
+Before downloading metadata, you may select 'Autopopulate metadata' to pre-fill some parts of the metadata, for example if all (or nearly all) of your specimens are Insects, you can pre-fill *Phylum* to Arthropoda and *Class* to Insecta. The fields will remain filled for all other plates in the batch. 
+
+* **SAMPLE ID:** ID that is informative to ONTOLOGY. *Do not edit*
+* **CUSTOM ID:** Name of specimen that is informative to the user
+* **PHYLUM:** Name of specimen that is informative to the user
+* **CLASS:** Name of specimen that is informative to the user
+* **ORDER:** Name of specimen that is informative to the user
+* **FAMILY:** (*Optional*) Name of specimen that is informative to the user
+* **SUBFAMILY:** (*Optional*) Name of specimen that is informative to the user
+* **GENUS:** (*Optional*) Name of specimen that is informative to the user
+* **SPECIES:** (*Optional*) Name of specimen that is informative to the user
+* **COLLECTORS:** Name of specimen that is informative to the user
+* **:** Name of specimen that is informative to the user
+* **CUSTOM ID:** Name of specimen that is informative to the user
+
+
+ONTOLOGY uses user-supplied taxonomic assignments to screen for contamination. 
+
 ----------
 PHOTOGRAPH
 ----------

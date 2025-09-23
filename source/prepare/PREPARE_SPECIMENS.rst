@@ -20,7 +20,7 @@ MOUNT
 
 *MOUNT* guides the user through arraying specimens for a plate. The most straightforward approach is to array small and large specimens separately and not mix them within a plate, though mixed plates are possible and are the case shown by the software.
 
-A filled ONTOLOGY Metadata Template (*.xlsx) is required for analysis of each plate. It is typically most straightforward to download and fill the sheet while arraying specimens. 
+A filled ONTOLOGY Metadata Template (`*`.xlsx) is required for analysis of each plate. It is typically most straightforward to download and fill the sheet while arraying specimens. 
 
 Before downloading metadata, you may select 'Autopopulate metadata' to pre-fill some parts of the metadata, for example if all (or nearly all) of your specimens are Insects, you can pre-fill *Phylum* to Arthropoda and *Class* to Insecta. The fields will remain filled for all other plates in the batch. 
 
