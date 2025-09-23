@@ -8,7 +8,7 @@ DNA Barcoding
 Introduction
 ============
 
-Welcome to the online resources for ONTOLOGY DNA Barcoding. ONTOLOGY supports the preparation of specimens for barcoding by assembling required data in a structured format ready for upload to BOLD.
+Welcome to the online resources for ONTOLOGY DNA Barcoding. ONTOLOGY supports the preparation of specimens for barcoding by assembling required data in a structured format ready for upload to BOLD. Ken is testing an edit.
 
 Feedback
 ========
