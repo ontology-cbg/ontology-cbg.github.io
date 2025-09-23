@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Photograph Specimen &mdash; Ontology 0.1 documentation</title>
+  <title>PHOTOGRAPH &mdash; Ontology 0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
@@ -63,7 +63,7 @@
 <li class="toctree-l2"><a class="reference internal" href="array_specimens.html">Array Specimen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="metadata_entry.html">Metadat Entry</a></li>
 <li class="toctree-l2"><a class="reference internal" href="label_specimens.html">Label Specimen</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Photograph Specimen</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">PHOTOGRAPH</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sample_tissue.html">Sample Tissue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plate_complete.html">Plate(s) Complete</a></li>
 <li class="toctree-l2"><a class="reference internal" href="preparation_summary.html">Preparation Summary</a></li>
@@ -71,6 +71,8 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../implement.html">Implement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analyze.html">Analyze</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tipstricks.html">Tips &amp; Tricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshoot.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../contact_us.html">Contact Us</a></li>
 </ul>
 
@@ -89,7 +91,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../prepare.html">Prepare</a></li>
-      <li class="breadcrumb-item active">Photograph Specimen</li>
+      <li class="breadcrumb-item active">PHOTOGRAPH</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/prepare/photograph_specimen.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -99,8 +101,39 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="photograph-specimen">
-<span id="id1"></span><h1>Photograph Specimen<a class="headerlink" href="#photograph-specimen" title="Link to this heading"></a></h1>
+  <section id="photograph">
+<span id="photograph-specimen"></span><h1>PHOTOGRAPH<a class="headerlink" href="#photograph" title="Link to this heading"></a></h1>
+<p>ONTOLOGY accepts photographs in .jpg, .png, and .tif formats.</p>
+<p>After specimens are arrayed, take a photograph of each one. See [photography guide] for tips on taking photographs. We strongly reccomend that you organize images into folders by plate, generate exactly the number of images as specimens on the corresponding plate, and ensure images are named so that they sort alphanumberically from A01 to H11. For example if you used all 10 plates in a run, a well-organised folder structure could be:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>.
+└── AAA001/
+    └── RUN_1/
+        ├── PLATE_1/
+        │   ├── A01.jpg
+        │   ├── A02.jpg
+        │   ├── A03.jpg
+        │   ├── ...
+        │   └── H11.jpg
+        ├── PLATE_2/
+        ├── ...
+        └── PLATE_10/
+</pre></div>
+</div>
+<p>In the full ONTOLOGY workflow, photos are added one plate at a time.</p>
+<section id="advanced-user">
+<h2>Advanced user<a class="headerlink" href="#advanced-user" title="Link to this heading"></a></h2>
+<p>To upload photographs in the advanced user module, you can upload files or folders.</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Files: Select as many photographs as there are specimens.</dt><dd><ul>
+<li><p>If specimens are missing photos, insert a blank photo.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Folder: Select as many folders as you have plates in the run</p></li>
+</ul>
+</section>
 </section>
 
 

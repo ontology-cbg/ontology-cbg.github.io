@@ -59,6 +59,7 @@
 <li class="toctree-l1"><a class="reference internal" href="implement.html">Implement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analyze.html">Analyze</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tipstricks.html">Tips &amp; Tricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshoot.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact_us.html">Contact Us</a></li>
 </ul>
 
@@ -97,15 +98,31 @@
 <section id="software-overview">
 <h1>Software Overview<a class="headerlink" href="#software-overview" title="Link to this heading"></a></h1>
 <p>ONTOLOGY kits come as <em>batches</em>—a set of plates with a unique six-digit alpha-numeric code recognized by the software. Each plate in the batch has a batch code and the unique plate ID (from 1 to 24) printed on it.</p>
+<p>ONTOLOGY is designed around the analysis of multiplexed samples pooled into a single run of a sequencer. For this reason, the unit of analysis in ONTOLOGY is the <strong>run</strong>.</p>
 <p>ONTOLOGY workflows are divided into three phases:</p>
 <ul class="simple">
-<li><p><strong>PREPARE:</strong> Establish run</p></li>
-<li><p><strong>IMPLEMENT:</strong></p></li>
-<li><p><strong>ANALYZE:</strong></p></li>
+<li><p><strong>PREPARE:</strong> Initiate run; upload metadata</p></li>
+<li><p><strong>IMPLEMENT:</strong> Complete molecular laboratory tasks</p></li>
+<li><p><strong>ANALYZE:</strong> Analyze sequence data; view run summary; upload to repository (BOLD or RAMS)</p></li>
+</ul>
+<section id="software-requirements">
+<h2>Software requirements<a class="headerlink" href="#software-requirements" title="Link to this heading"></a></h2>
+<section id="macos">
+<h3>macOS<a class="headerlink" href="#macos" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>macOS 15 (Sequoia) and above</p></li>
+<li><p>16 GB RAM</p></li>
 </ul>
 </section>
-<section id="feedback">
-<h1>Feedback<a class="headerlink" href="#feedback" title="Link to this heading"></a></h1>
+<section id="windows">
+<h3>Windows<a class="headerlink" href="#windows" title="Link to this heading"></a></h3>
+<p>Not currently supported</p>
+</section>
+<section id="linux">
+<h3>Linux<a class="headerlink" href="#linux" title="Link to this heading"></a></h3>
+<p>Not currently supported</p>
+</section>
+</section>
 </section>
 <section id="resource-structure">
 <h1>Resource structure<a class="headerlink" href="#resource-structure" title="Link to this heading"></a></h1>
@@ -125,16 +142,8 @@
 <li class="toctree-l1"><a class="reference internal" href="data.html">Example data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="home.html">Home</a></li>
 <li class="toctree-l1"><a class="reference internal" href="prepare.html">Prepare</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="prepare/launch_project.html">Launch Project</a></li>
-<li class="toctree-l2"><a class="reference internal" href="prepare/select_dna_plates.html">Select DNA Plates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="prepare/confirm_selection.html">Confirm Selection</a></li>
-<li class="toctree-l2"><a class="reference internal" href="prepare/array_specimens.html">Array Specimen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="prepare/metadata_entry.html">Metadat Entry</a></li>
-<li class="toctree-l2"><a class="reference internal" href="prepare/label_specimens.html">Label Specimen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="prepare/photograph_specimen.html">Photograph Specimen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="prepare/sample_tissue.html">Sample Tissue</a></li>
-<li class="toctree-l2"><a class="reference internal" href="prepare/plate_complete.html">Plate(s) Complete</a></li>
-<li class="toctree-l2"><a class="reference internal" href="prepare/preparation_summary.html">Preparation Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prepare/PREPARE_RUN.html">PREPARE RUN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prepare/PREPARE_SPECIMENS.html">PREPARE SPECIMENS</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="implement.html">Implement</a><ul>
@@ -158,6 +167,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="tipstricks.html">Tips &amp; Tricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshoot.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact_us.html">Contact Us</a></li>
 </ul>
 </div>

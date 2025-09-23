@@ -1,8 +1,12 @@
-.. _photograph_specimen:
+.. _PREPARE_SPECIMENS:
 
-==========
+=================
+PREPARE SPECIMENS
+=================
+
+----------
 PHOTOGRAPH
-==========
+----------
 
 ONTOLOGY accepts photographs in .jpg, .png, and .tif formats.
 
