@@ -8,7 +8,12 @@ DNA Barcoding
 Introduction
 ============
 
-Welcome to the online resources for ONTOLOGY DNA Barcoding. ONTOLOGY supports the preparation of specimens for barcoding by assembling required data in a structured format ready for upload to BOLD. Ken is testing an edit.
+Welcome to the manual for ONTOLOGY, and end-to-end platform for DNA barcoding and metabarcoding. ONTOLOGY software is designed to work with our freeze-dried PCR microplates. 
+
+ONTOLOGY contains two workflows: **DNA barcoding** and **metabarcoding**. The DNA barcoding workflow is designed to facilitate sequencing of *individual specimens*, whereas the metabarcoding workflow is   that contains `a link to BOLD`_.
+
+.. _a link to BOLD: https://boldsystems.org/
+
 
 Feedback
 ========
