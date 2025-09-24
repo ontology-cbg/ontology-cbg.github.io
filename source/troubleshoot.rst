@@ -6,7 +6,7 @@ Troubleshooting
 
 Tips & Tricks are intended for *advanced users* to get more out of ONTOLOGY.
 
-1. The issue 
+1. Many samples did not produce an amplicon.
 
-	Solution
+	We have found that hit-picking failures and diluting extracted DNA 30×–50× often facilitates amplification. 
 

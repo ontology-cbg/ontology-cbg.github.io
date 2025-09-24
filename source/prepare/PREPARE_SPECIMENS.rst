@@ -26,7 +26,7 @@ A filled ONTOLOGY Metadata Template (`*`.xlsx) is required for analysis of each 
 
 Before downloading metadata, you may select 'Autopopulate metadata' to pre-fill some parts of the metadata, for example if all (or nearly all) of your specimens are Insects, you can pre-fill *Phylum* to Arthropoda and *Class* to Insecta. The fields will remain filled for all other plates in the batch. 
 
-The fields are required unless specified as *Optional*. ONTOLOGY uses user-supplied taxonomic assignments to screen for contamination.
+The fields are required unless specified as *Optional*. ONTOLOGY uses user-supplied taxonomic assignments to screen for contamination. Some columns are omitted from metabarcoding analysis.
 
 * **SAMPLE ID:** ID that is informative to ONTOLOGY; *Do not edit*
 * **CUSTOM ID:** User-supplied ID for the specimen
@@ -41,6 +41,7 @@ The fields are required unless specified as *Optional*. ONTOLOGY uses user-suppl
 * **COLLECTION DATE:** Date that the specimen was captured (for a range of dates, put the end)
 * **LATITUDE:** Numeric; Decimal degrees only (DD.DDDD)
 * **LONGITUDE:** Numeric; Decimal degrees only (DD.DDDD)
+* **NO LABEL:** Binary, input '1' to skip generating a paper label for this specimen
 * **Image Name:** User-supplied image name, with or without file extension; if left blank ONTOLOGY will assume images are supplied in a logical order
 * **Image ID:** [TBD]
 
@@ -54,10 +55,17 @@ Metadata are uploaded one plate at a time in the full workflow.
 TISSUE
 ------
 
-For large specimens that are too big to place whole into a DNA extraction plate, DNA must be extracted from a small piece of tissue, typically a leg. 
+DNA from small specimens is extracted from the entire specimen, placed in the well of an extraction plate. 
 
-<We find that most people sample too much tissue, so reccomend diluting all extracted DNA 20X.>
+For large specimens that are too big to place whole into a DNA extraction plate, DNA must be extracted from a small piece of tissue, typically a leg. The most common reason we have found for PCR failure is that users have sampled too much tissue, so **ensure you sample only a very small piece of tissue for alkaline lysis.**
 
+
+
+-----
+LABEL
+-----
+
+ONTOLOGY will generate physical labels that can be printed and affixed to specimens. We reccomend printing on cardstock paper. <More to come>
 
 
 ----------
@@ -66,7 +74,9 @@ PHOTOGRAPH
 
 ONTOLOGY accepts photographs in .jpg, .png, and .tif formats.
 
-After specimens are arrayed, take a photograph of each one. See [photography guide] for tips on taking photographs. We strongly reccomend that you organize images into folders by plate, generate exactly the number of images as specimens on the corresponding plate, and ensure images are named so that they sort alphanumberically from A01 to H11. For example if you used all 10 plates in a run, a well-organised folder structure could be:
+After specimens are arrayed, take a photograph of each one. Taking photograhps in order, from A01 to A12 then B01 to B12, etc., to H11, and retaining only one photograph per specimen, will minimize the need to organize files. See [photography guide] for tips on taking photographs.
+
+We strongly reccomend that you organize images into folders by plate, generate exactly the number of images as specimens on the corresponding plate, and ensure images are named so that they sort alphanumberically from A01 to H11. For example if you used all 10 plates in a Run, a well-organised folder structure could be:
 
 .. code-block:: text
 
@@ -84,14 +94,16 @@ After specimens are arrayed, take a photograph of each one. See [photography gui
             └── PLATE_10/
 
 
-In the full ONTOLOGY workflow, photos are added one plate at a time.
+In the full ONTOLOGY workflow, photos are added one plate at a time, and you can select either a folder containing the correct number of specimens, or the files directly.
 
--------------
-Advanced user
--------------
+-------
+SUMMARY
+-------
 
-To upload photographs in the advanced user module, you can upload files or folders. 
+The SUMMARY page provides a comprehensive look at the specimens that will be taken forward into the IMPLEMENT phase. Critically, the can opt to repeat the PREPARE SPECIMENS steps and add an additional plate, or proceed to IMPLEMENT with the current set of plates. 
 
-* Files: Select as many photographs as there are specimens.
-	* If specimens are missing photos, insert a blank photo.
-* Folder: Select as many folders as you have plates in the run
+The upper section provides a summary of individual plates. Individual wells can be selected, and information edited. The number of specimens in each plate is listed, as is the number of images, fraction with complete metadata, the number of array images uploaded, and the number of negative controls. All plates in the Run can be reviewed and the user can switch between them using the arrows above the plate. The well colour indicates whether all metadata are present (green), if some fields are missing (red), if the well was not used (white), or if it is a negative control (black).
+
+Below, the Run summary provides information to the user about how many plates and specimens are included in the Run.
+
+When the user has completed PREPARE for all plates that they would like to include in the Run, they can proceed to the IMPLEMENT phase.

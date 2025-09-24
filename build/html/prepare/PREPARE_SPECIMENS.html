@@ -104,28 +104,47 @@
 <section id="mount">
 <h2>MOUNT<a class="headerlink" href="#mount" title="Link to this heading"></a></h2>
 <p><em>MOUNT</em> guides the user through arraying specimens for a plate. The most straightforward approach is to array small and large specimens separately and not mix them within a plate, though mixed plates are possible and are the case shown by the software.</p>
+<p>Specimens being mounted into microplates should be placed in EtOH.</p>
 <p>A filled ONTOLOGY Metadata Template (<cite>*</cite>.xlsx) is required for analysis of each plate. It is typically most straightforward to download and fill the sheet while arraying specimens.</p>
 <p>Before downloading metadata, you may select ‘Autopopulate metadata’ to pre-fill some parts of the metadata, for example if all (or nearly all) of your specimens are Insects, you can pre-fill <em>Phylum</em> to Arthropoda and <em>Class</em> to Insecta. The fields will remain filled for all other plates in the batch.</p>
+<p>The fields are required unless specified as <em>Optional</em>. ONTOLOGY uses user-supplied taxonomic assignments to screen for contamination. Some columns are omitted from metabarcoding analysis.</p>
 <ul class="simple">
-<li><p><strong>SAMPLE ID:</strong> ID that is informative to ONTOLOGY. <em>Do not edit</em></p></li>
-<li><p><strong>CUSTOM ID:</strong> Name of specimen that is informative to the user</p></li>
-<li><p><strong>PHYLUM:</strong> Name of specimen that is informative to the user</p></li>
-<li><p><strong>CLASS:</strong> Name of specimen that is informative to the user</p></li>
-<li><p><strong>ORDER:</strong> Name of specimen that is informative to the user</p></li>
-<li><p><strong>FAMILY:</strong> (<em>Optional</em>) Name of specimen that is informative to the user</p></li>
-<li><p><strong>SUBFAMILY:</strong> (<em>Optional</em>) Name of specimen that is informative to the user</p></li>
-<li><p><strong>GENUS:</strong> (<em>Optional</em>) Name of specimen that is informative to the user</p></li>
-<li><p><strong>SPECIES:</strong> (<em>Optional</em>) Name of specimen that is informative to the user</p></li>
-<li><p><strong>COLLECTORS:</strong> Name of specimen that is informative to the user</p></li>
-<li><p><strong>:</strong> Name of specimen that is informative to the user</p></li>
-<li><p><strong>CUSTOM ID:</strong> Name of specimen that is informative to the user</p></li>
+<li><p><strong>SAMPLE ID:</strong> ID that is informative to ONTOLOGY; <em>Do not edit</em></p></li>
+<li><p><strong>CUSTOM ID:</strong> User-supplied ID for the specimen</p></li>
+<li><p><strong>PHYLUM:</strong> The organism’s phylum</p></li>
+<li><p><strong>CLASS:</strong> The organism’s taxonomic class</p></li>
+<li><p><strong>ORDER:</strong> The organism’s taxonomic order</p></li>
+<li><p><strong>FAMILY:</strong> (<em>Optional</em>) The organism’s taxonomic family</p></li>
+<li><p><strong>SUBFAMILY:</strong> (<em>Optional</em>) The organism’s taxonomic subfamily</p></li>
+<li><p><strong>GENUS:</strong> (<em>Optional</em>) The organism’s genus</p></li>
+<li><p><strong>SPECIES:</strong> (<em>Optional</em>) The species name (including genus)</p></li>
+<li><p><strong>COLLECTORS:</strong> Name of collectors tied to the specimen</p></li>
+<li><p><strong>COLLECTION DATE:</strong> Date that the specimen was captured (for a range of dates, put the end)</p></li>
+<li><p><strong>LATITUDE:</strong> Numeric; Decimal degrees only (DD.DDDD)</p></li>
+<li><p><strong>LONGITUDE:</strong> Numeric; Decimal degrees only (DD.DDDD)</p></li>
+<li><p><strong>NO LABEL:</strong> Binary, input ‘1’ to skip generating a paper label for this specimen</p></li>
+<li><p><strong>Image Name:</strong> User-supplied image name, with or without file extension; if left blank ONTOLOGY will assume images are supplied in a logical order</p></li>
+<li><p><strong>Image ID:</strong> [TBD]</p></li>
 </ul>
-<p>ONTOLOGY uses user-supplied taxonomic assignments to screen for contamination.</p>
+</section>
+<section id="upload-metadata">
+<h2>UPLOAD METADATA<a class="headerlink" href="#upload-metadata" title="Link to this heading"></a></h2>
+<p>Metadata are uploaded one plate at a time in the full workflow.</p>
+</section>
+<section id="tissue">
+<h2>TISSUE<a class="headerlink" href="#tissue" title="Link to this heading"></a></h2>
+<p>DNA from small specimens is extracted from the entire specimen, placed in the well of an extraction plate.</p>
+<p>For large specimens that are too big to place whole into a DNA extraction plate, DNA must be extracted from a small piece of tissue, typically a leg. The most common reason we have found for PCR failure is that users have sampled too much tissue, so <strong>ensure you sample only a very small piece of tissue for alkaline lysis.</strong></p>
+</section>
+<section id="label">
+<h2>LABEL<a class="headerlink" href="#label" title="Link to this heading"></a></h2>
+<p>ONTOLOGY will generate physical labels that can be printed and affixed to specimens. We reccomend printing on cardstock paper. &lt;More to come&gt;</p>
 </section>
 <section id="photograph">
 <h2>PHOTOGRAPH<a class="headerlink" href="#photograph" title="Link to this heading"></a></h2>
 <p>ONTOLOGY accepts photographs in .jpg, .png, and .tif formats.</p>
-<p>After specimens are arrayed, take a photograph of each one. See [photography guide] for tips on taking photographs. We strongly reccomend that you organize images into folders by plate, generate exactly the number of images as specimens on the corresponding plate, and ensure images are named so that they sort alphanumberically from A01 to H11. For example if you used all 10 plates in a run, a well-organised folder structure could be:</p>
+<p>After specimens are arrayed, take a photograph of each one. Taking photograhps in order, from A01 to A12 then B01 to B12, etc., to H11, and retaining only one photograph per specimen, will minimize the need to organize files. See [photography guide] for tips on taking photographs.</p>
+<p>We strongly reccomend that you organize images into folders by plate, generate exactly the number of images as specimens on the corresponding plate, and ensure images are named so that they sort alphanumberically from A01 to H11. For example if you used all 10 plates in a Run, a well-organised folder structure could be:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>.
 └── AAA001/
     └── RUN_1/
@@ -140,21 +159,14 @@
         └── PLATE_10/
 </pre></div>
 </div>
-<p>In the full ONTOLOGY workflow, photos are added one plate at a time.</p>
+<p>In the full ONTOLOGY workflow, photos are added one plate at a time, and you can select either a folder containing the correct number of specimens, or the files directly.</p>
 </section>
-<section id="advanced-user">
-<h2>Advanced user<a class="headerlink" href="#advanced-user" title="Link to this heading"></a></h2>
-<p>To upload photographs in the advanced user module, you can upload files or folders.</p>
-<ul class="simple">
-<li><dl class="simple">
-<dt>Files: Select as many photographs as there are specimens.</dt><dd><ul>
-<li><p>If specimens are missing photos, insert a blank photo.</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><p>Folder: Select as many folders as you have plates in the run</p></li>
-</ul>
+<section id="summary">
+<h2>SUMMARY<a class="headerlink" href="#summary" title="Link to this heading"></a></h2>
+<p>The SUMMARY page provides a comprehensive look at the specimens that will be taken forward into the IMPLEMENT phase. Critically, the can opt to repeat the PREPARE SPECIMENS steps and add an additional plate, or proceed to IMPLEMENT with the current set of plates.</p>
+<p>The upper section provides a summary of individual plates. Individual wells can be selected, and information edited. The number of specimens in each plate is listed, as is the number of images, fraction with complete metadata, the number of array images uploaded, and the number of negative controls. All plates in the Run can be reviewed and the user can switch between them using the arrows above the plate. The well colour indicates whether all metadata are present (green), if some fields are missing (red), if the well was not used (white), or if it is a negative control (black).</p>
+<p>Below, the Run summary provides information to the user about how many plates and specimens are included in the Run.</p>
+<p>When the user has completed PREPARE for all plates that they would like to include in the Run, they can proceed to the IMPLEMENT phase.</p>
 </section>
 </section>
 

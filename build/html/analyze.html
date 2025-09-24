@@ -68,6 +68,8 @@
 <li class="toctree-l2"><a class="reference internal" href="analyze/confirmation.html">Confirmation</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="tipstricks.html">Tips &amp; Tricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshoot.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact_us.html">Contact Us</a></li>
 </ul>
 
@@ -97,10 +99,22 @@
              
   <section id="analyze">
 <span id="id1"></span><h1>Analyze<a class="headerlink" href="#analyze" title="Link to this heading"></a></h1>
+<p>Analyze guides the user through bioinformatic analysis of the Run’s sequence data, provides technical and biological summaries of the Run, and facilitates upload to BOLD (DNA barcoding) or RAMS (metabarcoding).</p>
+<section id="file-import">
+<h2>FILE IMPORT<a class="headerlink" href="#file-import" title="Link to this heading"></a></h2>
+<p>The first step of ANALYZE is to import the .fastq files. You may analyze any number of .fastq files so long as they are in the same folder, or a single concatenated .fastq is also accepted. To analyze a folder of .fastq files, select ‘Choose Folder’; to analyze a single .fastq file, select ‘Choose File’.</p>
+<p>After uploading a file, the filename will display on the screen. In addition, the number of .fastq files read and the total number of reads across all fastq files will be displayed.</p>
+<p>After sequences are uploaded into the ONTOLOGY environment, you can proceed to select or confirm the reference library ONTOLOGY will use for ID.</p>
+</section>
+<section id="reference-library">
+<h2>REFERENCE LIBRARY<a class="headerlink" href="#reference-library" title="Link to this heading"></a></h2>
+<p>ONTOLOGY requires two reference library files: a SINTAX file and a VSEARCH file. We reccomend <a class="reference external" href="boldsystems.org/BOLDistilled">BOLDistilled</a> libraries for use with ONTOLOGY because they are confirmed to work.</p>
+<p>Please note: that querying against reference libraries is generally very quick compared to other parts of the bioinformatics pipeline, so using smaller libraries will only save a fraction of the analysis time.</p>
 <div class="toctree-wrapper compound">
 </div>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
+<h3>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h3>
+</section>
 </section>
 </section>
 
