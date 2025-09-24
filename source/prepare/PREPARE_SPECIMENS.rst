@@ -20,25 +20,45 @@ MOUNT
 
 *MOUNT* guides the user through arraying specimens for a plate. The most straightforward approach is to array small and large specimens separately and not mix them within a plate, though mixed plates are possible and are the case shown by the software.
 
+Specimens being mounted into microplates should be placed in EtOH. 
+
 A filled ONTOLOGY Metadata Template (`*`.xlsx) is required for analysis of each plate. It is typically most straightforward to download and fill the sheet while arraying specimens. 
 
 Before downloading metadata, you may select 'Autopopulate metadata' to pre-fill some parts of the metadata, for example if all (or nearly all) of your specimens are Insects, you can pre-fill *Phylum* to Arthropoda and *Class* to Insecta. The fields will remain filled for all other plates in the batch. 
 
-* **SAMPLE ID:** ID that is informative to ONTOLOGY. *Do not edit*
-* **CUSTOM ID:** Name of specimen that is informative to the user
-* **PHYLUM:** Name of specimen that is informative to the user
-* **CLASS:** Name of specimen that is informative to the user
-* **ORDER:** Name of specimen that is informative to the user
-* **FAMILY:** (*Optional*) Name of specimen that is informative to the user
-* **SUBFAMILY:** (*Optional*) Name of specimen that is informative to the user
-* **GENUS:** (*Optional*) Name of specimen that is informative to the user
-* **SPECIES:** (*Optional*) Name of specimen that is informative to the user
-* **COLLECTORS:** Name of specimen that is informative to the user
-* **:** Name of specimen that is informative to the user
-* **CUSTOM ID:** Name of specimen that is informative to the user
+The fields are required unless specified as *Optional*. ONTOLOGY uses user-supplied taxonomic assignments to screen for contamination.
+
+* **SAMPLE ID:** ID that is informative to ONTOLOGY; *Do not edit*
+* **CUSTOM ID:** User-supplied ID for the specimen
+* **PHYLUM:** The organism's phylum
+* **CLASS:** The organism's taxonomic class
+* **ORDER:** The organism's taxonomic order
+* **FAMILY:** (*Optional*) The organism's taxonomic family
+* **SUBFAMILY:** (*Optional*) The organism's taxonomic subfamily
+* **GENUS:** (*Optional*) The organism's genus
+* **SPECIES:** (*Optional*) The species name (including genus)
+* **COLLECTORS:** Name of collectors tied to the specimen
+* **COLLECTION DATE:** Date that the specimen was captured (for a range of dates, put the end)
+* **LATITUDE:** Numeric; Decimal degrees only (DD.DDDD)
+* **LONGITUDE:** Numeric; Decimal degrees only (DD.DDDD)
+* **Image Name:** User-supplied image name, with or without file extension; if left blank ONTOLOGY will assume images are supplied in a logical order
+* **Image ID:** [TBD]
+
+---------------
+UPLOAD METADATA
+---------------
+
+Metadata are uploaded one plate at a time in the full workflow.
+
+------
+TISSUE
+------
+
+For large specimens that are too big to place whole into a DNA extraction plate, DNA must be extracted from a small piece of tissue, typically a leg. 
+
+<We find that most people sample too much tissue, so reccomend diluting all extracted DNA 20X.>
 
 
-ONTOLOGY uses user-supplied taxonomic assignments to screen for contamination. 
 
 ----------
 PHOTOGRAPH
