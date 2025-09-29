@@ -39,7 +39,16 @@ Please note: querying against reference libraries is generally very quick compar
 BIOINFORMATICS
 --------------
 
-With the proper metadata and sequence data loaded into ONTOLOGY, bioinformatic analysis is as easy as clicking a button. Simple select, *Start Analysis* and ONTOLOGY will begin the process of analyzing your data to produce an ASV table. 
+With the proper metadata and sequence data loaded into ONTOLOGY, bioinformatic analysis is as easy as clicking a button. Simply select, *Start Analysis* and ONTOLOGY will begin the process of analyzing your data to produce an ASV table. 
+
+The length of analysis depends on three things:
+
+	1. Computer power—faster on more powerful machines
+	2. Quantity of sequence data—faster with fewer reads
+	3. Biological complexity—faster with fewer ASVs per sample
+
+Detailed documentation can be found [link tbd]
+
 
 .. EMINE we must do this: Re-run only ID if user changes reference library.
 
