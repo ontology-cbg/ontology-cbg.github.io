@@ -1,9 +1,8 @@
 .. _index:
 
-====================================================
-ONTOLOGY
-DNA Barcoding
-====================================================
+====
+Home
+====
 
 Introduction
 ============
@@ -12,61 +11,11 @@ Welcome to the manual for ONTOLOGY, and end-to-end platform for DNA barcoding an
 
 ONTOLOGY contains two workflows: **DNA barcoding** and **metabarcoding**. The DNA barcoding workflow is designed to facilitate sequencing of *individual specimens*, whereas the metabarcoding workflow is designed to facilitate sequencing of *samples containing DNA from many specimens*.
 
-Both workflows share a common structure: they both have beginner workflows designed to teach a researchers new to barcoding all aspects of the protocols. They each also have **advanced user** modes, accessible via the [rocket ship symbol]. 
+Both workflows share a common structure and use the same plates: they both have beginner workflows designed to teach a researchers new to barcoding all aspects of the protocols. They each also have **advanced user** modes, accessible via the [rocket ship symbol]. 
 
 This is a sentence that contains `a link to BOLD`_.
 
 .. _a link to BOLD: https://boldsystems.org/
-
-
-Software Overview
-=================
-
-ONTOLOGY kits come as *batches*—a set of plates with a unique six-digit alpha-numeric code recognized by the software. Each plate in the batch has a batch code and the unique plate ID (from 1 to 24) printed on it.
-
-ONTOLOGY is designed around the analysis of multiplexed samples pooled into a single run of a sequencer. For this reason, the unit of analysis in ONTOLOGY is the **run**.
-
-ONTOLOGY workflows are divided into three phases: 
-
-* **PREPARE:** Initiate run; upload metadata	
-* **IMPLEMENT:** Complete molecular laboratory tasks
-* **ANALYZE:** Analyze sequence data; view run summary; upload to repository (BOLD or RAMS)
-
-
----------------------
-Software requirements
----------------------
-
-^^^^^
-macOS
-^^^^^
-
-* macOS 15 (Sequoia) and above
-* 16 GB RAM
-
-^^^^^^^
-Windows
-^^^^^^^
-
-Not currently supported
-
-^^^^^
-Linux
-^^^^^
-
-Not currently supported
-
-
-
-
-Resource structure
-==================
-
-These resources are structured into sections, accessible through the links on the left. 
-
-We suggest you start with the :ref:`Getting started <gettingstarted>` section, which will cover the computational requirements of the software and outline in more detail how best to use the ONTOLOGY. This section also has a for hints and tips for those new to the.
-
-If you want to use our example dataset, you should then have a look at the :ref:`Example data <data>` section, which provides instructions on how to download this data.
 
 
 
@@ -74,17 +23,15 @@ Page tree
 =========
 
 .. toctree::
+	:maxdepth: 2
 	:titlesonly:
 	:includehidden:
-	:maxdepth: 2
-	
-	gettingstarted
-	data
-	home
-	prepare
-	implement
-	analyze
-	tipstricks
-	troubleshoot
-	contact_us
 
+    about
+    prepare
+    implement
+    analyze
+    tutorial
+    tipstricks
+    troubleshoot
+    contact_us
