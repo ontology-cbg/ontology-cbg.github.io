@@ -27,17 +27,19 @@ Full workflow
 Note: Before beginning, ensure the ONTOLOGY workspace does not contain a folder called DBC999.
 
 1. **PREPARE**
+
     a. Open ONTOLOGY and select **DNA Barcoding**
     b. Select **New Run**
     c. For *Run name*, you can enter anything you'd like, but we suggest **DBC_Full_Tutorial**
     d. For *Batch ID*, enter exactly **DBC999**, and leave the marker as COI and the primer as AR01.
     e. Click **Initiate the Run**
     f. Click the forward arrow several times to proceed through the workflow to **Upload Metadata**.
-        i. Select *Choose File*
-        ii. Navigate to 'DNAbarcode_tutorial/metadata'
-        iii. Select **metadata_sheet_for_01.xlsx**
-        iv. Confirm all details are correct (95 specimens; 1 negative control; 95 specimens with complete data) and then click forward arrow
-    
+
+        * Select *Choose File*
+        * Navigate to 'DNAbarcode_tutorial/metadata'
+        * Select **metadata_sheet_for_01.xlsx**
+        * Confirm all details are correct (95 specimens; 1 negative control; 95 specimens with complete data) and then click forward arrow
+
 
 
 
