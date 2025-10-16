@@ -6,18 +6,7 @@
 Implement
 ============
 
+The **IMPLEMENT** workflow is largely performed in the molecular laboratory and the software is not highly-interactive. In this section of the manual, you can find the protocols used during **IMPLEMENT**.
 
-.. toctree::
-    :hidden:
+*This page is under construction*.
 
-    implement/extract_dna
-    implement/prepare_for_pcr
-    implement/conduct_pcr
-    implement/prepare_library
-    implement/sequence_library
-    implement/sequencing_progress
-    implement/implement_summary
-
-
-Introduction
-============

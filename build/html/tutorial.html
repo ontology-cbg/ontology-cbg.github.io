@@ -53,8 +53,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">HOME</span></p>
-<ul class="current">
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="prepare.html">Prepare</a></li>
 <li class="toctree-l1"><a class="reference internal" href="implement.html">Implement</a></li>
@@ -95,9 +94,53 @@
              
   <section id="tutorial">
 <span id="id1"></span><h1>Tutorial<a class="headerlink" href="#tutorial" title="Link to this heading"></a></h1>
-<p>This tutorial will walk you through an example run of ONTOLOGY’s two modules with example datasets.</p>
+<p>This tutorial will walk you through an example run of ONTOLOGY’s two modules with example datasets. The tutorial covers both DNA barcoding and metabarcoding, and both full and advanced user modules. The sequence data provided for the tutorials is provided by default with a subset of reads from the full run, but full run sequences can be downloaded <em>here</em> if users wish.</p>
+<section id="dna-barcoding">
+<h2>DNA barcoding<a class="headerlink" href="#dna-barcoding" title="Link to this heading"></a></h2>
+<p>The DNA barcoding tutorial uses example data found ‘here’. The data are Australian insects collected by Paul Hebert via Malaise traps in December 2024. Two ONTOLOGY plates—UMIs 1 and 2—were prepared and sequenced on an Oxford Nanopore Technologies’ Flongle Flow Cell on a MinION Mk-1d in September 2025. A single .fastq file, containing 12,345 reads, from the run is included for computational efficiency; the full run contained nearly 1M reads and takes 20× longer.</p>
+<section id="full-workflow">
+<h3>Full workflow<a class="headerlink" href="#full-workflow" title="Link to this heading"></a></h3>
+<p>Note: Before beginning, ensure the ONTOLOGY workspace does not contain a folder called DBC999.</p>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt><strong>PREPARE</strong></dt><dd><ol class="loweralpha simple">
+<li><p>Open ONTOLOGY and select <strong>DNA Barcoding</strong></p></li>
+<li><p>Select <strong>New Run</strong></p></li>
+<li><p>For <em>Run name</em>, you can enter anything you’d like, but we suggest <strong>DBC_Full_Tutorial</strong></p></li>
+<li><p>For <em>Batch ID</em>, enter exactly <strong>DBC999</strong>, and leave the marker as COI and the primer as AR01.</p></li>
+<li><p>Click <strong>Initiate the Run</strong></p></li>
+<li><dl class="simple">
+<dt>Click the forward arrow several times to proceed through the workflow to <strong>Upload Metadata</strong>.</dt><dd><ol class="lowerroman simple">
+<li><p>Select <em>Choose File</em></p></li>
+<li><p>Navigate to ‘DNAbarcode_tutorial/metadata’</p></li>
+<li><p>Select <strong>metadata_sheet_for_01.xlsx</strong></p></li>
+<li><p>Confirm all details are correct (95 specimens; 1 negative control; 95 specimens with complete data) and then click forward arrow</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+</ol>
+</dd>
+</dl>
+</li>
+</ol>
+</section>
+<section id="advanced-user">
+<h3>Advanced user<a class="headerlink" href="#advanced-user" title="Link to this heading"></a></h3>
+</section>
+</section>
+<section id="metabarcoding">
+<h2>Metabarcoding<a class="headerlink" href="#metabarcoding" title="Link to this heading"></a></h2>
+<p>The metabarcoding tutorial uses example data found ‘here’. Like the DNA barcoding tutorial data, th insects collected by Paul Hebert via Malaise traps in December 2024. A single UMI plate was used, with 30 samples, each replicated three times.</p>
+<section id="id2">
+<h3>Full workflow<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+</section>
+<section id="id3">
+<h3>Advanced user<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <div class="toctree-wrapper compound">
 </div>
+</section>
+</section>
 </section>
 
 

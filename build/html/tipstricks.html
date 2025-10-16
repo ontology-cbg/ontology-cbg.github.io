@@ -53,8 +53,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">HOME</span></p>
-<ul class="current">
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="prepare.html">Prepare</a></li>
 <li class="toctree-l1"><a class="reference internal" href="implement.html">Implement</a></li>
@@ -91,11 +90,16 @@
              
   <section id="tips-tricks">
 <span id="tipstricks"></span><h1>Tips &amp; Tricks<a class="headerlink" href="#tips-tricks" title="Link to this heading"></a></h1>
-<p>Tips &amp; Tricks are intended for <em>advanced users</em> to get more out of ONTOLOGY.</p>
+<p>Tips &amp; Tricks are intended for <em>advanced users</em> to get more out of ONTOLOGY. These strategies should typically be used via the Advanced User Modules rather than full workflows.</p>
 <ol class="arabic">
 <li><p>Using plates from different batches in a run</p>
 <blockquote>
 <div><p>Although not explicitly supported by ONTOLOGY it is possible to combine plates from different batches into a single run. Presently, all plates with a particular plate ID (e.g., plate 10) have the same UMIs. This means, plate 10 from batch AAA001 is identical to plate 10 from batch ADC348. Thus, plates from different batches can be combined in runs so long as they have different IDs.</p>
+</div></blockquote>
+</li>
+<li><p>Using a single plate in multiple runs</p>
+<blockquote>
+<div><p>It is possible to use a single plate in multiple ONTOLOGY runs. For example, a user might wish to metabarcode a small number of samples on a MinION flow cell, rather than a large number of samples on a PromethION flow cell.</p>
 </div></blockquote>
 </li>
 </ol>

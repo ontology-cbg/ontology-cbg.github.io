@@ -6,7 +6,63 @@
 Tutorial
 ============
 
-This tutorial will walk you through an example run of ONTOLOGY's two modules with example datasets.
+This tutorial will walk you through an example run of ONTOLOGY's two modules with example datasets. The tutorial covers both DNA barcoding and metabarcoding, and both full and advanced user modules. The sequence data provided for the tutorials is provided by default with a subset of reads from the full run, but full run sequences can be downloaded *here* if users wish. 
+
+.. Link to come
+
+
+--------------
+DNA barcoding
+--------------
+
+The DNA barcoding tutorial uses example data found 'here'. The data are Australian insects collected by Paul Hebert via Malaise traps in December 2024. Two ONTOLOGY plates—UMIs 1 and 2—were prepared and sequenced on an Oxford Nanopore Technologies' Flongle Flow Cell on a MinION Mk-1d in September 2025. A single .fastq file, containing 12,345 reads, from the run is included for computational efficiency; the full run contained nearly 1M reads and takes 20× longer. 
+
+.. Link to come.
+.. Numbers are not correct
+
+^^^^^^^^^^^^^
+Full workflow
+^^^^^^^^^^^^^
+
+Note: Before beginning, ensure the ONTOLOGY workspace does not contain a folder called DBC999.
+
+1. **PREPARE**
+    a. Open ONTOLOGY and select **DNA Barcoding**
+    b. Select **New Run**
+    c. For *Run name*, you can enter anything you'd like, but we suggest **DBC_Full_Tutorial**
+    d. For *Batch ID*, enter exactly **DBC999**, and leave the marker as COI and the primer as AR01.
+    e. Click **Initiate the Run**
+    f. Click the forward arrow several times to proceed through the workflow to **Upload Metadata**.
+        i. Select *Choose File*
+        ii. Navigate to 'DNAbarcode_tutorial/metadata'
+        iii. Select **metadata_sheet_for_01.xlsx**
+        iv. Confirm all details are correct (95 specimens; 1 negative control; 95 specimens with complete data) and then click forward arrow
+    
+
+
+
+^^^^^^^^^^^^^
+Advanced user
+^^^^^^^^^^^^^
+
+
+--------------
+Metabarcoding
+--------------
+
+The metabarcoding tutorial uses example data found 'here'. Like the DNA barcoding tutorial data, th insects collected by Paul Hebert via Malaise traps in December 2024. A single UMI plate was used, with 30 samples, each replicated three times. 
+
+.. Link to come.
+
+^^^^^^^^^^^^^
+Full workflow
+^^^^^^^^^^^^^
+
+
+
+^^^^^^^^^^^^^
+Advanced user
+^^^^^^^^^^^^^
 
 
 
