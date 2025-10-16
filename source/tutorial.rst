@@ -14,7 +14,6 @@ The advanced user modules simplify **PREPARE**, skip **IMPLEMENT**, and include 
 
 .. Link to come
 
-
 --------------
 DNA barcoding
 --------------
@@ -28,40 +27,41 @@ The DNA barcoding tutorial uses example data found 'here'. The data are Australi
 Full workflow
 ^^^^^^^^^^^^^
 
-Note: Before beginning, ensure the ONTOLOGY workspace does not contain a folder called DBC999.
+*Note: Before beginning, ensure the ONTOLOGY workspace does not contain a folder called DBC999*.
+
+Open ONTOLOGY and select **DNA Barcoding**
 
 1. **PREPARE**
 
-    a. Open ONTOLOGY and select **DNA Barcoding**
-    b. Select **New Run**
-    c. For *Run name*, you can enter anything you'd like, but we suggest **DBC_Full_Tutorial**
-    d. For *Batch ID*, enter exactly **DBC999**, and leave the marker as COI and the primer as AR01.
-    e. Click **Initiate the Run**
-    f. Click the forward arrow several times to proceed through the workflow to **Upload Metadata**.
+    a. Select **New Run**
+    b. For *Run name*, you can enter anything you'd like, but we suggest **DBC_Full_Tutorial**
+    c. For *Batch ID*, enter exactly **DBC999**, and leave the marker as COI and the primer as AR01.
+    d. Click **Initiate the Run**
+    e. Click the forward arrow several times to proceed through the workflow to **Upload Metadata**.
 
         * Select *Choose File*
         * Navigate to 'DNAbarcode_tutorial/metadata'
         * Select **metadata_sheet_for_01.xlsx**
         * Confirm all details are correct (95 specimens; 1 negative control; 95 specimens with complete data) and then click forward arrow
 
-    g. Click the forward arrow until you arrive at *Label*. Here we will upload an array image. This is optional but encouraged as it allows for improved error checking.
+    f. Click the forward arrow until you arrive at *Label*. Here we will upload an array image. This is optional but encouraged as it allows for improved error checking.
         
         * Select *Upload Array Image*
         * Navigate to 'DNAbarcode_tutorial/array_images'
         * Select **array_01.jpg** 
         * Note: this image is from a separate project but was chosen because it contains pinned insects; most users would not upload an array photo of a microplate.
 
-    h. Select the forward arrow to proceed to *PHOTOGRAPH*
+    g. Select the forward arrow to proceed to *PHOTOGRAPH*
 
         * Select *Upload photographs*
         * Navigate to 'DNAbarcode_tutorial/specimen_images'
         * Select the folder, *plate1*, then click Open
         * Verify the number of images is correct (95 images uploaded), then click the forward arrow
 
-    i. Review the Plate Summary page. The user can edit metadata here.
-    j. Select "Yes, add another plate (repeat Prepare Specimens)"
-    k. Repeat Steps **f** to **i** above, but choose **metadata_sheet_for_02.xlsx**, **array_02.jpg**, and the images in the **plate2** folder.
-    l. Review the summary sheet—all wells on both plates should be green—and then select **No, all specimens processed**.
+    h. Review the Plate Summary page. The user can edit metadata here.
+    i. Select "Yes, add another plate (repeat Prepare Specimens)"
+    j. Repeat Steps **f** to **i** above, but choose **metadata_sheet_for_02.xlsx**, **array_02.jpg**, and the images in the **plate2** older.
+    k. Review the summary sheet—all wells on both plates should be green—and then select **No, all specimens processed**.
 
 2. **IMPLEMENT**
 
@@ -76,18 +76,48 @@ Note: Before beginning, ensure the ONTOLOGY workspace does not contain a folder 
         * Navigate to 'DNAbarcode_tutorial/fastq_file' and 'open' that folder
         * Verify that the number of .fastq files is correct (1) and the number of reads is 17,912 then click forward arrow
 
-    b. At *Bioinformatic Analysis* stage, verify that your sequence (.fastq) file and reference library are correct, then select **Start Analysis**; the analysis should compelte in under 10 minutes on most computers.
+    b. In 'Select Reference Library', if the 'Current Reference Library' is blank, download BOLDistilled via the 'Download BOLDistilled' button. After there is a reference library there, then proceed.
+    c. At *Bioinformatic Analysis* stage, verify that your sequence (.fastq) file and reference library are correct, then select **Start Analysis**; the analysis should compelte in under 10 minutes on most computers. After analysis has completed, click the forward arrow.
+    d. Explore the various summary metrics and graphs on the next page
+    e. On the next page, type your email and the desired BOLD project code and then click *Submit data package* (note, the tutorial data will not go to BOLD)
+    f. The *RUN SUMMARY* page summarises the details of the completed run.
+
+    .. Forward arrow should not be clickable before analysis has completed.
 
 ^^^^^^^^^^^^^
 Advanced user
 ^^^^^^^^^^^^^
+
+*Note: Before beginning, ensure the ONTOLOGY workspace does not contain a folder called DBC999*.
+
+Open ONTOLOGY and select **DNA Barcoding**. Then, select the Rocket Ship logo at the bottom right to launch the advanced used module.
+
+1. **PREPARE**
+
+    a. For *Run name*, you can enter anything you'd like, but we suggest *DBC_Advanced_Tutorial*
+    b. In the **Kit Info** fields, enter **DBC999** as the batch ID and leave the marker as COI and the primer as AR01.
+    c. Check boxes 1 and 2 for 'Plate(s)'
+    d. Select upload metadata and then select the 'DNAbarcode_tutorial/metadata' folder; both will be uploaded
+    e. Select specimen images, then select the 'DNAbarcode_tutorial/specimen_images' folder
+    f. Select 'DNAbarcode_tutorial/array images' 
+    g. Click the next arrow, and then review the Run Summary. Once complete, click the forward arrow to proceed to **Analyze**
+
+2. **ANALYZE**
+
+*Analyze is identical to the full walkthrough; see above*
+
+.. link to above?
 
 
 --------------
 Metabarcoding
 --------------
 
-The metabarcoding tutorial uses example data found 'here'. Like the DNA barcoding tutorial data, th insects collected by Paul Hebert via Malaise traps in December 2024. A single UMI plate was used, with 30 samples, each replicated three times. 
+The metabarcoding tutorial uses example data found 'here'. Like the DNA barcoding tutorial data, th insects collected by Paul Hebert via Malaise traps in December 2024. A single UMI plate was used, with 30 samples, each replicated three times.
+
+(Under development)
+
+Open ONTOLOGY and select **Metabarcoding**.
 
 .. Link to come.
 
@@ -95,17 +125,14 @@ The metabarcoding tutorial uses example data found 'here'. Like the DNA barcodin
 Full workflow
 ^^^^^^^^^^^^^
 
+(Under development)
 
 
 ^^^^^^^^^^^^^
 Advanced user
 ^^^^^^^^^^^^^
 
+Open ONTOLOGY and select **Metabarcoding**. Then, select the Rocket Ship logo at the bottom right to launch the advanced used module.
 
-
-.. toctree::
-    :hidden:
-	
-    prepare/PREPARE_RUN
-    prepare/PREPARE_SPECIMENS
+(Under development)
 	

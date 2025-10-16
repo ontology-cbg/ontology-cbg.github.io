@@ -55,6 +55,12 @@ Detailed documentation can be found [link tbd]
 .. remove restart
 .. keep cancel (delete all files)
 
---------------
-BIOINFORMATICS
---------------
+---------------
+SUMMARY METRICS
+---------------
+
+The four tabs at the top contain graphics that allow the user to explore the performance of their run. 
+
+	* Technical (Run-wide): Metrics looking at the entire run together
+	* Technical (Per-plate): Metrics showing heatmaps of wells
+	* Taxonomy: Metrics showing the distribution of taxa in the study, including which matched vs. did not match a BIN.
