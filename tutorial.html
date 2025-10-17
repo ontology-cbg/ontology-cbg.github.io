@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorial &mdash; ONTOLOGY 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2709fde1"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/toggleprompt.js?v=5801b3bb"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tips &amp; Tricks" href="tipstricks.html" />
+    <link rel="prev" title="Analyze" href="analyze.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            ONTOLOGY
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepare.html">Prepare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="implement.html">Implement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analyze.html">Analyze</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tipstricks.html">Tips &amp; Tricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshoot.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact_us.html">Contact Us</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ONTOLOGY</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Tutorial</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tutorial.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tutorial">
+<span id="id1"></span><h1>Tutorial<a class="headerlink" href="#tutorial" title="Link to this heading"></a></h1>
+<p>This tutorial will walk you through an example run of ONTOLOGY’s two modules with example datasets. The tutorial covers both DNA barcoding and metabarcoding, and both full and advanced user modules. The sequence data provided for the tutorials is provided by default with a subset of reads from the full run, but full run sequences can be downloaded <em>here</em> if users wish.</p>
+<p>Because it’s hands-on, this tutorial does not have much content for ‘Implement’; the physical ‘Test’ workflow should be used if users wish to practice the molecular protocols.</p>
+<p>The advanced user modules simplify <strong>PREPARE</strong>, skip <strong>IMPLEMENT</strong>, and include the full <strong>ANALYZE</strong>. Therefore, the tutorials for the advanced user modules only focus on <strong>PREPARE</strong>.</p>
+<section id="dna-barcoding">
+<h2>DNA barcoding<a class="headerlink" href="#dna-barcoding" title="Link to this heading"></a></h2>
+<p>The DNA barcoding tutorial uses example data found ‘here’. The data are Australian insects collected by Paul Hebert via Malaise traps in December 2024. Two ONTOLOGY plates—UMIs 1 and 2—were prepared and sequenced on an Oxford Nanopore Technologies’ Flongle Flow Cell on a MinION Mk-1d in September 2025. A single .fastq file, containing 17,912 reads, from the run is included for computational efficiency; the full run contained nearly 1M reads and takes 20× longer.</p>
+<section id="full-workflow">
+<h3>Full workflow<a class="headerlink" href="#full-workflow" title="Link to this heading"></a></h3>
+<p><em>Note: Before beginning, ensure the ONTOLOGY workspace does not contain a folder called DBC999</em>.</p>
+<p>Open ONTOLOGY and select <strong>DNA Barcoding</strong></p>
+<ol class="arabic">
+<li><p><strong>PREPARE</strong></p>
+<blockquote>
+<div><ol class="loweralpha">
+<li><p>Select <strong>New Run</strong></p></li>
+<li><p>For <em>Run name</em>, you can enter anything you’d like, but we suggest <strong>DBC_Full_Tutorial</strong></p></li>
+<li><p>For <em>Batch ID</em>, enter exactly <strong>DBC999</strong>, and leave the marker as COI and the primer as AR01.</p></li>
+<li><p>Click <strong>Initiate the Run</strong></p></li>
+<li><p>Click the forward arrow several times to proceed through the workflow to <strong>Upload Metadata</strong>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Select <em>Choose File</em></p></li>
+<li><p>Navigate to ‘DNAbarcode_tutorial/metadata’</p></li>
+<li><p>Select <strong>metadata_sheet_for_01.xlsx</strong></p></li>
+<li><p>Confirm all details are correct (95 specimens; 1 negative control; 95 specimens with complete data) and then click forward arrow</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Click the forward arrow until you arrive at <em>Label</em>. Here we will upload an array image. This is optional but encouraged as it allows for improved error checking.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Select <em>Upload Array Image</em></p></li>
+<li><p>Navigate to ‘DNAbarcode_tutorial/array_images’</p></li>
+<li><p>Select <strong>array_01.jpg</strong></p></li>
+<li><p>Note: this image is from a separate project but was chosen because it contains pinned insects; most users would not upload an array photo of a microplate.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Select the forward arrow to proceed to <em>PHOTOGRAPH</em></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Select <em>Upload photographs</em></p></li>
+<li><p>Navigate to ‘DNAbarcode_tutorial/specimen_images’</p></li>
+<li><p>Select the folder, <em>plate1</em>, then click Open</p></li>
+<li><p>Verify the number of images is correct (95 images uploaded), then click the forward arrow</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Review the Plate Summary page. The user can edit metadata here.</p></li>
+<li><p>Select “Yes, add another plate (repeat Prepare Specimens)”</p></li>
+<li><p>Repeat Steps <strong>f</strong> to <strong>i</strong> above, but choose <strong>metadata_sheet_for_02.xlsx</strong>, <strong>array_02.jpg</strong>, and the images in the <strong>plate2</strong> older.</p></li>
+<li><p>Review the summary sheet—all wells on both plates should be green—and then select <strong>No, all specimens processed</strong>.</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p><strong>IMPLEMENT</strong></p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Click through all arrows of implement to explore the protocols.</p></li>
+<li><p>Explore the interactive calculators at <em>SEQUENCING &gt; LIBRARY PREP</em> and <em>SEQUENCING &gt; FLOW CELL</em></p></li>
+<li><p>Proceed to <em>ANALYZE</em></p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><dl>
+<dt><strong>ANALYZE</strong></dt><dd><ol class="loweralpha">
+<li><p>Upload the .fastq file (or files, if using the full run sequences)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Select <em>Choose Folder</em></p></li>
+<li><p>Navigate to ‘DNAbarcode_tutorial/fastq_file’ and ‘open’ that folder</p></li>
+<li><p>Verify that the number of .fastq files is correct (1) and the number of reads is 17,912 then click forward arrow</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>In ‘Select Reference Library’, if the ‘Current Reference Library’ is blank, download BOLDistilled via the ‘Download BOLDistilled’ button. After there is a reference library there, then proceed.</p></li>
+<li><p>At <em>Bioinformatic Analysis</em> stage, verify that your sequence (.fastq) file and reference library are correct, then select <strong>Start Analysis</strong>; the analysis should compelte in under 10 minutes on most computers. After analysis has completed, click the forward arrow.</p></li>
+<li><p>Explore the various summary metrics and graphs on the next page</p></li>
+<li><p>On the next page, type your email and the desired BOLD project code and then click <em>Submit data package</em> (note, the tutorial data will not go to BOLD)</p></li>
+<li><p>The <em>RUN SUMMARY</em> page summarises the details of the completed run.</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+</ol>
+</section>
+<section id="advanced-user">
+<h3>Advanced user<a class="headerlink" href="#advanced-user" title="Link to this heading"></a></h3>
+<p><em>Note: Before beginning, ensure the ONTOLOGY workspace does not contain a folder called DBC999</em>.</p>
+<p>Open ONTOLOGY and select <strong>DNA Barcoding</strong>. Then, select the Rocket Ship logo at the bottom right to launch the advanced used module.</p>
+<ol class="arabic">
+<li><p><strong>PREPARE</strong></p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>For <em>Run name</em>, you can enter anything you’d like, but we suggest <em>DBC_Advanced_Tutorial</em></p></li>
+<li><p>In the <strong>Kit Info</strong> fields, enter <strong>DBC999</strong> as the batch ID and leave the marker as COI and the primer as AR01.</p></li>
+<li><p>Check boxes 1 and 2 for ‘Plate(s)’</p></li>
+<li><p>Select upload metadata and then select the ‘DNAbarcode_tutorial/metadata’ folder; both will be uploaded</p></li>
+<li><p>Select specimen images, then select the ‘DNAbarcode_tutorial/specimen_images’ folder</p></li>
+<li><p>Select ‘DNAbarcode_tutorial/array images’</p></li>
+<li><p>Click the next arrow, and then review the Run Summary. Once complete, click the forward arrow to proceed to <strong>Analyze</strong></p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p><strong>ANALYZE</strong></p></li>
+</ol>
+<p><em>Analyze is identical to the full walkthrough; see above</em></p>
+</section>
+</section>
+<section id="metabarcoding">
+<h2>Metabarcoding<a class="headerlink" href="#metabarcoding" title="Link to this heading"></a></h2>
+<p>The metabarcoding tutorial uses example data found ‘here’. Like the DNA barcoding tutorial data, th insects collected by Paul Hebert via Malaise traps in December 2024. A single UMI plate was used, with 30 samples, each replicated three times.</p>
+<p>(Under development)</p>
+<p>Open ONTOLOGY and select <strong>Metabarcoding</strong>.</p>
+<section id="id2">
+<h3>Full workflow<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<p>(Under development)</p>
+</section>
+<section id="id3">
+<h3>Advanced user<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<p>Open ONTOLOGY and select <strong>Metabarcoding</strong>. Then, select the Rocket Ship logo at the bottom right to launch the advanced used module.</p>
+<p>(Under development)</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="analyze.html" class="btn btn-neutral float-left" title="Analyze" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tipstricks.html" class="btn btn-neutral float-right" title="Tips &amp; Tricks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Centre for Biodiversity Genomics.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
