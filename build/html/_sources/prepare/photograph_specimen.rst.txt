@@ -1,0 +1,37 @@
+.. _photograph_specimen:
+
+==========
+PHOTOGRAPH
+==========
+
+ONTOLOGY accepts photographs in .jpg, .png, and .tif formats.
+
+After specimens are arrayed, take a photograph of each one. See [photography guide] for tips on taking photographs. We strongly reccomend that you organize images into folders by plate, generate exactly the number of images as specimens on the corresponding plate, and ensure images are named so that they sort alphanumberically from A01 to H11. For example if you used all 10 plates in a run, a well-organised folder structure could be:
+
+.. code-block:: text
+
+    .
+    └── AAA001/
+        └── RUN_1/
+            ├── PLATE_1/
+            │   ├── A01.jpg
+            │   ├── A02.jpg
+            │   ├── A03.jpg
+            │   ├── ...
+            │   └── H11.jpg
+            ├── PLATE_2/
+            ├── ...
+            └── PLATE_10/
+
+
+In the full ONTOLOGY workflow, photos are added one plate at a time.
+
+-------------
+Advanced user
+-------------
+
+To upload photographs in the advanced user module, you can upload files or folders. 
+
+* Files: Select as many photographs as there are specimens.
+	* If specimens are missing photos, insert a blank photo.
+* Folder: Select as many folders as you have plates in the run
