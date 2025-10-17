@@ -20,6 +20,10 @@ help:
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 
+# github:
+# 	@make html
+# 	@cp -a build/html/. ../docs
+
 github:
-	@make html
-	@cp -a build/html/. ../docs
+	@$(MAKE) html
+	@ghp-import -n -p -f build/html
