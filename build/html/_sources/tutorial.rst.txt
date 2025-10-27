@@ -5,7 +5,7 @@
 ============
 Tutorial
 ============
-[test push edit]
+
 This tutorial will walk you through an example run of ONTOLOGY's two modules with example datasets. The tutorial covers both DNA barcoding and metabarcoding, and both full and advanced user modules. The sequence data provided for the tutorials is provided by default with a subset of reads from the full run, but full run sequences can be downloaded *here* if users wish.
 
 Because it's hands-on, this tutorial does not have much content for 'Implement'; the physical 'Test' workflow should be used if users wish to practice the molecular protocols.
