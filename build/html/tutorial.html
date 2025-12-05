@@ -62,6 +62,8 @@
 <li class="toctree-l1"><a class="reference internal" href="tipstricks.html">Tips &amp; Tricks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshoot.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact_us.html">Contact Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workspace.html">ONTOLOGY® WORKSPACE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="technical.html">Technical details</a></li>
 </ul>
 
         </div>
@@ -95,10 +97,11 @@
 <p>The advanced user modules simplify <strong>PREPARE</strong>, skip <strong>IMPLEMENT</strong>, and include the full <strong>ANALYZE</strong>. Therefore, the tutorials for the advanced user modules only focus on <strong>PREPARE</strong>.</p>
 <section id="dna-barcoding">
 <h2>DNA barcoding<a class="headerlink" href="#dna-barcoding" title="Link to this heading"></a></h2>
-<p>The DNA barcoding tutorial uses example data found ‘here’. The data are Australian insects collected by Paul Hebert via Malaise traps in December 2024. Two ONTOLOGY plates—UMIs 1 and 2—were prepared and sequenced on an Oxford Nanopore Technologies’ Flongle Flow Cell on a MinION Mk-1d in September 2025. A single .fastq file, containing 17,912 reads, from the run is included for computational efficiency; the full run contained nearly 1M reads and takes 20× longer.</p>
-<section id="full-workflow">
-<h3>Full workflow<a class="headerlink" href="#full-workflow" title="Link to this heading"></a></h3>
-<p><em>Note: Before beginning, ensure the ONTOLOGY workspace does not contain a folder called DBC999</em>.</p>
+<p>The DNA barcoding tutorial uses example data found in the beta-testing directory. The data are Australian insects collected by Paul Hebert via Malaise traps in December 2024. Two ONTOLOGY plates—UMIs 1 and 2—were prepared and sequenced on an Oxford Nanopore Technologies’ Flongle Flow Cell on a MinION Mk-1d in September 2025. A single .fastq file, containing 17,912 reads, from the run is included for computational efficiency; the full run contained nearly 1M reads and takes 20× longer.</p>
+<section id="standard-workflow">
+<h3>Standard workflow<a class="headerlink" href="#standard-workflow" title="Link to this heading"></a></h3>
+<p><em>Note: Before beginning, ensure the ONTOLOGY workspace does not contain a folder called OAT001</em>.</p>
+<p>This tutorial uses data in the <em>standard_2plate.zip</em> folder; download and unzip before beginning</p>
 <p>Open ONTOLOGY and select <strong>DNA Barcoding</strong></p>
 <ol class="arabic">
 <li><p><strong>PREPARE</strong></p>
@@ -106,7 +109,7 @@
 <div><ol class="loweralpha">
 <li><p>Select <strong>New Run</strong></p></li>
 <li><p>For <em>Run name</em>, you can enter anything you’d like, but we suggest <strong>DBC_Full_Tutorial</strong></p></li>
-<li><p>For <em>Batch ID</em>, enter exactly <strong>DBC999</strong>, and leave the marker as COI and the primer as AR01.</p></li>
+<li><p>For <em>Batch ID</em>, enter exactly <strong>OAT001</strong>, and leave the marker as COI and the primer as AR01.</p></li>
 <li><p>Click <strong>Initiate the Run</strong></p></li>
 <li><p>Click the forward arrow several times to proceed through the workflow to <strong>Upload Metadata</strong>.</p>
 <blockquote>
@@ -140,7 +143,7 @@
 </li>
 <li><p>Review the Plate Summary page. The user can edit metadata here.</p></li>
 <li><p>Select “Yes, add another plate (repeat Prepare Specimens)”</p></li>
-<li><p>Repeat Steps <strong>f</strong> to <strong>i</strong> above, but choose <strong>metadata_sheet_for_02.xlsx</strong>, <strong>array_02.jpg</strong>, and the images in the <strong>plate2</strong> older.</p></li>
+<li><p>Repeat Steps <strong>f</strong> to <strong>i</strong> above, but choose <strong>metadata_sheet_for_02.xlsx</strong>, <strong>array_02.jpg</strong>, and the images in the <strong>plate2</strong> folder.</p></li>
 <li><p>Review the summary sheet—all wells on both plates should be green—and then select <strong>No, all specimens processed</strong>.</p></li>
 </ol>
 </div></blockquote>
@@ -178,18 +181,19 @@
 </section>
 <section id="advanced-user">
 <h3>Advanced user<a class="headerlink" href="#advanced-user" title="Link to this heading"></a></h3>
-<p><em>Note: Before beginning, ensure the ONTOLOGY workspace does not contain a folder called DBC999</em>.</p>
-<p>Open ONTOLOGY and select <strong>DNA Barcoding</strong>. Then, select the Rocket Ship logo at the bottom right to launch the advanced used module.</p>
+<p><em>Note: Before beginning, ensure the ONTOLOGY workspace does not contain a folder called OAT002</em>.</p>
+<p>This tutorial uses data in the <em>advanced_2plate.zip</em> folder; download and unzip before beginning</p>
+<p>Open ONTOLOGY and select <strong>DNA Barcoding</strong>. Then, select the S/A button at the bottom right to launch the advanced used module.</p>
 <ol class="arabic">
 <li><p><strong>PREPARE</strong></p>
 <blockquote>
 <div><ol class="loweralpha simple">
 <li><p>For <em>Run name</em>, you can enter anything you’d like, but we suggest <em>DBC_Advanced_Tutorial</em></p></li>
-<li><p>In the <strong>Kit Info</strong> fields, enter <strong>DBC999</strong> as the batch ID and leave the marker as COI and the primer as AR01.</p></li>
+<li><p>In the <strong>Kit Info</strong> fields, enter <strong>OAT002</strong> as the batch ID and leave the marker as COI and the primer as AR01.</p></li>
 <li><p>Check boxes 1 and 2 for ‘Plate(s)’</p></li>
-<li><p>Select upload metadata and then select the ‘DNAbarcode_tutorial/metadata’ folder; both will be uploaded</p></li>
-<li><p>Select specimen images, then select the ‘DNAbarcode_tutorial/specimen_images’ folder</p></li>
-<li><p>Select ‘DNAbarcode_tutorial/array images’</p></li>
+<li><p>Select upload metadata and then select the metadata file; both will be uploaded</p></li>
+<li><p>Select specimen images, then select the ‘specimen_images’ folder to upload</p></li>
+<li><p>Select ‘array images’; select all images and upload</p></li>
 <li><p>Click the next arrow, and then review the Run Summary. Once complete, click the forward arrow to proceed to <strong>Analyze</strong></p></li>
 </ol>
 </div></blockquote>
@@ -205,7 +209,7 @@
 <p>(Under development)</p>
 <p>Open ONTOLOGY and select <strong>Metabarcoding</strong>.</p>
 <section id="id2">
-<h3>Full workflow<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<h3>Standard workflow<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <p>(Under development)</p>
 </section>
 <section id="id3">
