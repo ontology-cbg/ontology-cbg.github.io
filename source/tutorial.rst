@@ -18,16 +18,18 @@ The advanced user modules simplify **PREPARE**, skip **IMPLEMENT**, and include 
 DNA barcoding
 --------------
 
-The DNA barcoding tutorial uses example data found 'here'. The data are Australian insects collected by Paul Hebert via Malaise traps in December 2024. Two ONTOLOGY plates—UMIs 1 and 2—were prepared and sequenced on an Oxford Nanopore Technologies' Flongle Flow Cell on a MinION Mk-1d in September 2025. A single .fastq file, containing 17,912 reads, from the run is included for computational efficiency; the full run contained nearly 1M reads and takes 20× longer. 
+The DNA barcoding tutorial uses example data found in the beta-testing directory. The data are Australian insects collected by Paul Hebert via Malaise traps in December 2024. Two ONTOLOGY plates—UMIs 1 and 2—were prepared and sequenced on an Oxford Nanopore Technologies' Flongle Flow Cell on a MinION Mk-1d in September 2025. A single .fastq file, containing 17,912 reads, from the run is included for computational efficiency; the full run contained nearly 1M reads and takes 20× longer. 
 
 .. Link to come.
 .. Numbers are not correct
 
 ^^^^^^^^^^^^^
-Full workflow
+Standard workflow
 ^^^^^^^^^^^^^
 
-*Note: Before beginning, ensure the ONTOLOGY workspace does not contain a folder called DBC999*.
+*Note: Before beginning, ensure the ONTOLOGY workspace does not contain a folder called OAT001*.
+
+This tutorial uses data in the *standard_2plate.zip* folder; download and unzip before beginning
 
 Open ONTOLOGY and select **DNA Barcoding**
 
@@ -35,7 +37,7 @@ Open ONTOLOGY and select **DNA Barcoding**
 
     a. Select **New Run**
     b. For *Run name*, you can enter anything you'd like, but we suggest **DBC_Full_Tutorial**
-    c. For *Batch ID*, enter exactly **DBC999**, and leave the marker as COI and the primer as AR01.
+    c. For *Batch ID*, enter exactly **OAT001**, and leave the marker as COI and the primer as AR01.
     d. Click **Initiate the Run**
     e. Click the forward arrow several times to proceed through the workflow to **Upload Metadata**.
 
@@ -60,7 +62,7 @@ Open ONTOLOGY and select **DNA Barcoding**
 
     h. Review the Plate Summary page. The user can edit metadata here.
     i. Select "Yes, add another plate (repeat Prepare Specimens)"
-    j. Repeat Steps **f** to **i** above, but choose **metadata_sheet_for_02.xlsx**, **array_02.jpg**, and the images in the **plate2** older.
+    j. Repeat Steps **f** to **i** above, but choose **metadata_sheet_for_02.xlsx**, **array_02.jpg**, and the images in the **plate2** folder.
     k. Review the summary sheet—all wells on both plates should be green—and then select **No, all specimens processed**.
 
 2. **IMPLEMENT**
@@ -88,18 +90,20 @@ Open ONTOLOGY and select **DNA Barcoding**
 Advanced user
 ^^^^^^^^^^^^^
 
-*Note: Before beginning, ensure the ONTOLOGY workspace does not contain a folder called DBC999*.
+*Note: Before beginning, ensure the ONTOLOGY workspace does not contain a folder called OAT002*.
 
-Open ONTOLOGY and select **DNA Barcoding**. Then, select the Rocket Ship logo at the bottom right to launch the advanced used module.
+This tutorial uses data in the *advanced_2plate.zip* folder; download and unzip before beginning
+
+Open ONTOLOGY and select **DNA Barcoding**. Then, select the S/A button at the bottom right to launch the advanced used module.
 
 1. **PREPARE**
 
     a. For *Run name*, you can enter anything you'd like, but we suggest *DBC_Advanced_Tutorial*
-    b. In the **Kit Info** fields, enter **DBC999** as the batch ID and leave the marker as COI and the primer as AR01.
+    b. In the **Kit Info** fields, enter **OAT002** as the batch ID and leave the marker as COI and the primer as AR01.
     c. Check boxes 1 and 2 for 'Plate(s)'
-    d. Select upload metadata and then select the 'DNAbarcode_tutorial/metadata' folder; both will be uploaded
-    e. Select specimen images, then select the 'DNAbarcode_tutorial/specimen_images' folder
-    f. Select 'DNAbarcode_tutorial/array images' 
+    d. Select upload metadata and then select the metadata file; both will be uploaded
+    e. Select specimen images, then select the 'specimen_images' folder to upload
+    f. Select 'array images'; select all images and upload
     g. Click the next arrow, and then review the Run Summary. Once complete, click the forward arrow to proceed to **Analyze**
 
 2. **ANALYZE**
@@ -122,7 +126,7 @@ Open ONTOLOGY and select **Metabarcoding**.
 .. Link to come.
 
 ^^^^^^^^^^^^^
-Full workflow
+Standard workflow
 ^^^^^^^^^^^^^
 
 (Under development)

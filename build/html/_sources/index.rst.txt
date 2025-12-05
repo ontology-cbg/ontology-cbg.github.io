@@ -35,3 +35,5 @@ Page tree
     tipstricks
     troubleshoot
     contact_us
+    workspace
+    technical
