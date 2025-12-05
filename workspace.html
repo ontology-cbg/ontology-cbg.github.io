@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tips &amp; Tricks &mdash; ONTOLOGY 0.1 documentation</title>
+  <title>ONTOLOGY® WORKSPACE &mdash; ONTOLOGY 0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
@@ -30,8 +30,8 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Troubleshooting" href="troubleshoot.html" />
-    <link rel="prev" title="Tutorial" href="tutorial.html" /> 
+    <link rel="next" title="Technical details" href="technical.html" />
+    <link rel="prev" title="Contact Us" href="contact_us.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -59,10 +59,10 @@
 <li class="toctree-l1"><a class="reference internal" href="implement.html">Implement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analyze.html">Analyze</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Tips &amp; Tricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tipstricks.html">Tips &amp; Tricks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshoot.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact_us.html">Contact Us</a></li>
-<li class="toctree-l1"><a class="reference internal" href="workspace.html">ONTOLOGY® WORKSPACE</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ONTOLOGY® WORKSPACE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="technical.html">Technical details</a></li>
 </ul>
 
@@ -80,9 +80,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Tips &amp; Tricks</li>
+      <li class="breadcrumb-item active">ONTOLOGY® WORKSPACE</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/tipstricks.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/workspace.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -90,29 +90,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="tips-tricks">
-<span id="tipstricks"></span><h1>Tips &amp; Tricks<a class="headerlink" href="#tips-tricks" title="Link to this heading"></a></h1>
-<p>Tips &amp; Tricks are intended for <em>advanced users</em> to get more out of ONTOLOGY. These strategies should typically be used via the Advanced User Modules rather than full workflows.</p>
-<ol class="arabic">
-<li><p>Using plates from different batches in a run</p>
-<blockquote>
-<div><p>Although not explicitly supported by ONTOLOGY it is possible to combine plates from different batches into a single run. Presently, all plates with a particular plate ID (e.g., plate 10) have the same UMIs. This means, plate 10 from batch AAA001 is identical to plate 10 from batch ADC348. Thus, plates from different batches can be combined in runs so long as they have different IDs.</p>
-</div></blockquote>
-</li>
-<li><p>Using a single plate in multiple runs</p>
-<blockquote>
-<div><p>It is possible to use a single plate in multiple ONTOLOGY runs. For example, a user might wish to metabarcode a small number of samples on a MinION flow cell, rather than a large number of samples on a PromethION flow cell.</p>
-</div></blockquote>
-</li>
-</ol>
+  <section id="ontology-workspace">
+<span id="workspace"></span><h1>ONTOLOGY® WORKSPACE<a class="headerlink" href="#ontology-workspace" title="Link to this heading"></a></h1>
+<p>ONTOLOGY™ stores all input and output files in the workspace on your computer. Do not edit the workspace except where noted below, because this could cause unexpected behaviour for ONTOLOGY™</p>
+<p>The ONTOLOGY™ workspace is organized by Batch at the top level, then Runs are subfolders within the Batch folder.</p>
+<p>The metadata and photos submitted by the user are stored in named folders.</p>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="tutorial.html" class="btn btn-neutral float-left" title="Tutorial" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="troubleshoot.html" class="btn btn-neutral float-right" title="Troubleshooting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="contact_us.html" class="btn btn-neutral float-left" title="Contact Us" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="technical.html" class="btn btn-neutral float-right" title="Technical details" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
