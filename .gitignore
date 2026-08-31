@@ -5,3 +5,13 @@
 temp/
 .idea
 .venv-sphinx
+
+# macOS finder metadata
+.DS_Store
+
+# Sphinx build cache: pickled intermediates, regenerated on every build.
+# Only build/html is published (via `ghp-import -f build/html`).
+build/doctrees/
+
+# local sphinx environment
+.sphinx_env/

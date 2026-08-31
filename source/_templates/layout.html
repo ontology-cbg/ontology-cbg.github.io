@@ -1,0 +1,17 @@
+{% extends "!layout.html" %}
+
+{#
+  Floating "On this page" navigation.
+  sphinx_rtd_theme has no right-hand TOC, so we render Sphinx's per-page
+  `toc` variable into a fixed panel. Styling: _static/custom.css
+  Behaviour (prune + scrollspy): _static/on-this-page.js
+#}
+{% block document %}
+  {{ super() }}
+  {%- if toc %}
+  <nav class="on-this-page" aria-label="On this page">
+    <p class="on-this-page__title">On this page</p>
+    {{ toc }}
+  </nav>
+  {%- endif %}
+{% endblock %}

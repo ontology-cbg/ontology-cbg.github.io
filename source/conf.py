@@ -35,5 +35,17 @@ exclude_patterns = []
 #master_doc = 'index'
 #html_title = "ONTOLOGY"
 html_theme = "sphinx_rtd_theme"
+
+# Sidebar: keep every child page expanded and visible at all times
+html_theme_options = {
+    "collapse_navigation": False,
+    "navigation_depth": 4,
+    "titles_only": False,
+    "sticky_navigation": True,
+}
 html_static_path = ['_static']
+
+# Floating right-hand "On this page" nav (see _templates/layout.html)
+html_css_files = ['custom.css']
+html_js_files = ['on-this-page.js']
 # html_static_path = []

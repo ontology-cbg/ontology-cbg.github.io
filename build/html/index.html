@@ -8,6 +8,7 @@
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=8eaeefa3" />
 
   
   <!--[if lt IE 9]>
@@ -26,11 +27,11 @@
         <script src="_static/togglebutton.js?v=4a39c7ea"></script>
         <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
         <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="_static/on-this-page.js?v=6be6e9b6"></script>
     <script src="_static/js/theme.js"></script>
-    <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="About" href="about.html" /> 
+    <link rel="next" title="Getting started" href="getting-started.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -53,14 +54,41 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
-<li class="toctree-l1"><a class="reference internal" href="prepare.html">Prepare</a></li>
-<li class="toctree-l1"><a class="reference internal" href="implement.html">Implement</a></li>
-<li class="toctree-l1"><a class="reference internal" href="analyze.html">Analyze</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tipstricks.html">Tips &amp; Tricks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshoot.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contact_us.html">Contact Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting-started/basics-of-ontology.html">Basics of ONTOLOGY</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started/choosing-a-workflow.html">Choosing a workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started/choosing-a-mode.html">Choosing a mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started/installation.html">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/dna-barcoding.html">DNA Barcoding workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/metabarcoding.html">Metabarcoding</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="workflow.html">Workflow guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="workflow/prepare.html">Prepare</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="workflow/prepare-run.html">Prepare run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workflow/prepare-specimens.html">Prepare specimens</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="workflow/implement.html">Implement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow/analyze.html">Analyze</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/mapping-file.html">Mapping file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/metadata-file.html">Metadata file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/bioinformatics-parameters.html">Bioinformatics parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/glossary.html">Glossary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Help</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="help/troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="help/tips-and-tricks.html">Tips &amp; Tricks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="help/contact-us.html">Contact Us</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -85,32 +113,54 @@
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
            <div itemprop="articleBody">
              
   <section id="home">
 <span id="index"></span><h1>Home<a class="headerlink" href="#home" title="Link to this heading"></a></h1>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
-<p>Welcome to the manual for ONTOLOGY, and end-to-end platform for DNA barcoding and metabarcoding. ONTOLOGY software is designed to work with our freeze-dried PCR microplates, and takes the user from setting up project metadata, through implementation of molecular lab workflows, then finally through bioinformatic analysis and uploading of data to <a class="reference external" href="https://boldsystems.org/">BOLD</a> (barcoding) or RAMS (metabarcoding; under development).</p>
-<p>ONTOLOGY contains two workflows: <strong>DNA barcoding</strong> and <strong>metabarcoding</strong>. The DNA barcoding workflow is designed to facilitate sequencing of <em>individual specimens</em>. The metabarcoding workflow is designed to facilitate sequencing of <em>samples containing DNA from many specimens</em>, including eDNA analysis. The same ONTOLOGY plates can be used for either workflow.</p>
-<p>Both workflows share a common structure. <strong>PREPARE</strong> establishes the run and sample metadata; <strong>IMPLEMENT</strong> guides the user through molecular laboratory protocols; <strong>ANALYZE</strong> performs bioinformatic analysis and data upload. Both have beginner workflows designed to teach a researchers new to barcoding all aspects of the protocols. They each also have <strong>advanced user</strong> modes, accessible via the [rocket ship symbol]. We note where the protocols diverge.</p>
+<p>Welcome to the manual for ONTOLOGY, an end-to-end platform for <strong>DNA Barcoding</strong> and <strong>Metabarcoding</strong> workflows, including sample preparation, processing, and bioinformatic analysis.
+The full ONTOLOGY workflow (kit mode) is designed to seamlessly link the laboratory and computational preparation phases by providing freeze-dried PCR microplates, designed specifically for easy sample tracking and direct software input. Users without ONTOLOGY kits may prepare their own plates and still use ONTOLOGY’s custom <strong>DNA Barcoding</strong> and <strong>Metabarcoding</strong> bioinformatic analysis pipelines (Custom Mode). For more information on the basics of ONTOLOGY does, please see: <a class="reference internal" href="getting-started/basics-of-ontology.html#about"><span class="std std-ref">Basics of ONTOLOGY</span></a></p>
+<p>The <strong>DNA Barcoding</strong> workflow is designed to facilitate sequencing of <em>individual specimens</em>. The <strong>Metabarcoding</strong> workflow is designed to facilitate sequencing of <em>samples containing DNA from many specimens</em>, including eDNA analysis. The same ONTOLOGY plates can be used for either workflow. For more information on the two workflows, please see: <a class="reference internal" href="getting-started/choosing-a-workflow.html#features-of-barcoding-and-metabarcoding"><span class="std std-ref">Choosing a workflow</span></a></p>
+<p>The <strong>DNA Barcoding</strong> and <strong>Metabarcoding</strong> workflows share a common sequence. <strong>PREPARE</strong> establishes the run and sample metadata; <strong>IMPLEMENT</strong> (DNA Barcoding only) guides the user through molecular laboratory protocols; <strong>ANALYZE</strong> performs bioinformatic analysis and data upload to <a class="reference external" href="https://boldsystems.org/">BOLD</a> (<strong>DNA Barcoding</strong>) or RAMS (<strong>Metabarcoding</strong>; under development). Both have beginner workflows designed to teach a researchers new to barcoding all aspects of the protocols. They each also have <strong>advanced user</strong> modes, accessible via the ONTOLOGY ‘DNA double helix’ logo. We note where the protocols diverge. For more information on the different modes of ONTOLOGY, please see: <a class="reference internal" href="getting-started/choosing-a-mode.html#about-different-modes"><span class="std std-ref">Choosing a mode</span></a></p>
+<p>For installation requirements, please see: <a class="reference internal" href="getting-started/installation.html#installation"><span class="std std-ref">Installation</span></a></p>
 </section>
 <section id="page-tree">
 <h2>Page tree<a class="headerlink" href="#page-tree" title="Link to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
-<li class="toctree-l1"><a class="reference internal" href="prepare.html">Prepare</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="prepare/PREPARE_RUN.html">PREPARE RUN</a></li>
-<li class="toctree-l2"><a class="reference internal" href="prepare/PREPARE_SPECIMENS.html">PREPARE SPECIMENS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting-started/basics-of-ontology.html">Basics of ONTOLOGY</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started/choosing-a-workflow.html">Choosing a workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started/choosing-a-mode.html">Choosing a mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started/installation.html">Installation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="implement.html">Implement</a></li>
-<li class="toctree-l1"><a class="reference internal" href="analyze.html">Analyze</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tipstricks.html">Tips &amp; Tricks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshoot.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contact_us.html">Contact Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/dna-barcoding.html">DNA Barcoding workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/metabarcoding.html">Metabarcoding</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="workflow.html">Workflow guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="workflow/prepare.html">Prepare</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow/implement.html">Implement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow/analyze.html">Analyze</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/mapping-file.html">Mapping file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/metadata-file.html">Metadata file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/bioinformatics-parameters.html">Bioinformatics parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/glossary.html">Glossary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Help</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="help/troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="help/tips-and-tricks.html">Tips &amp; Tricks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="help/contact-us.html">Contact Us</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </section>
@@ -119,8 +169,20 @@
 
            </div>
           </div>
+  <nav class="on-this-page" aria-label="On this page">
+    <p class="on-this-page__title">On this page</p>
+    <ul>
+<li><a class="reference internal" href="#">Home</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#page-tree">Page tree</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav>
+
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="about.html" class="btn btn-neutral float-right" title="About" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="getting-started.html" class="btn btn-neutral float-right" title="Getting started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
