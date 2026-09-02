@@ -56,7 +56,7 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting started</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../getting-started/what-is-ontology.html">What is ONTOLOGY</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting-started/basics-of-ontology.html">Basics of ONTOLOGY</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../getting-started/choosing-a-workflow.html">Choosing a workflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../getting-started/choosing-a-mode.html">Choosing a mode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../getting-started/installation.html">Installation</a></li>
@@ -204,7 +204,7 @@
 </section>
 <section id="custom-mode">
 <h2>Custom mode<a class="headerlink" href="#custom-mode" title="Link to this heading"></a></h2>
-<p>Custom mode allows the user to deviate from the constraints of the ONTOLOGY kits and users must provide their own primers and UMIs. Since Kit mode is very similar, we encourage users to use their own data for the Custom Mode Tutorial.</p>
+<p>Custom mode allows the user to deviate from the constraints of the ONTOLOGY kits and users must provide their own primers and UMIs. Since Kit mode is very similar, we encourage users to use their own data for the Custom Mode Tutorial. However, you may also use the provided UMIs file and the test data used for Kit mode to simulate running your own data.</p>
 <ol class="arabic">
 <li><p><strong>PREPARE</strong></p>
 <blockquote>
@@ -220,15 +220,18 @@
 </div></blockquote>
 </li>
 <li><p>For <strong>Mapping File</strong>, click <strong>Download Template</strong>.</p></li>
-<li><p>Fill in cells of Mapping Template File.</p>
+<li><p>Fill in cells of Mapping Template File. If you are using multiple primers, leave the Fw Primer Sequence and Rv Primer Sequence columns blank. This will trigger a new ‘Primer sets’ row to appear on the screen, where the parameters for multiple primers can be submitted.</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Note that you MUST provide your own UMI and primer sequences in custom mode.</p></li>
 <li><p>Example row: Plate ID = 1 (for 96 samples or less), Well ID = B01, Sample ID = Study1_Sample2, Replicate = 2, Negative Control = 0 (for samples) OR 1 (for negative controls), Positive Control = 0 (Postive controls are not considered at this time; use 0 for all cells for now), Primer Set Name = AR01.</p></li>
-<li><p>Upload Mapping File.</p></li>
+<li><p>Upload <strong>Mapping File</strong>.</p></li>
 </ul>
 </div></blockquote>
 </li>
+<li><p>If you left the Fw Primer Sequence and Rv Primer Sequence fields blank, download the <strong>Primer Sets</strong> template file. Fill in primer information for each ‘Primer Set Name’, which should correspond with the <strong>Mapping File</strong></p></li>
+</ol>
+<ol class="loweralpha" start="6">
 <li><p>Then, for ‘Metadata’, click ‘Download Template’.</p>
 <blockquote>
 <div><ul class="simple">

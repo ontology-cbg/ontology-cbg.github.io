@@ -67,7 +67,7 @@ Kit mode
 ^^^^^^^^^^^
 Custom mode
 ^^^^^^^^^^^
-Custom mode allows the user to deviate from the constraints of the ONTOLOGY kits and users must provide their own primers and UMIs. Since Kit mode is very similar, we encourage users to use their own data for the Custom Mode Tutorial.
+Custom mode allows the user to deviate from the constraints of the ONTOLOGY kits and users must provide their own primers and UMIs. Since Kit mode is very similar, we encourage users to use their own data for the Custom Mode Tutorial. However, you may also use the provided UMIs file and the test data used for Kit mode to simulate running your own data. 
 
 1. **PREPARE**
 
@@ -79,11 +79,13 @@ Custom mode allows the user to deviate from the constraints of the ONTOLOGY kits
         * Click 'Initialize'
 
     d. For **Mapping File**, click **Download Template**. 
-    e. Fill in cells of Mapping Template File. 
+    e. Fill in cells of Mapping Template File. If you are using multiple primers, leave the Fw Primer Sequence and Rv Primer Sequence columns blank. This will trigger a new 'Primer sets' row to appear on the screen, where the parameters for multiple primers can be submitted.
 
         * Note that you MUST provide your own UMI and primer sequences in custom mode. 
         * Example row: Plate ID = 1 (for 96 samples or less), Well ID = B01, Sample ID = Study1_Sample2, Replicate = 2, Negative Control = 0 (for samples) OR 1 (for negative controls), Positive Control = 0 (Postive controls are not considered at this time; use 0 for all cells for now), Primer Set Name = AR01.
-        * Upload Mapping File. 
+        * Upload **Mapping File**. 
+
+    f. If you left the Fw Primer Sequence and Rv Primer Sequence fields blank, download the **Primer Sets** template file. Fill in primer information for each 'Primer Set Name', which should correspond with the **Mapping File** 
 
     f. Then, for 'Metadata', click 'Download Template'. 
 

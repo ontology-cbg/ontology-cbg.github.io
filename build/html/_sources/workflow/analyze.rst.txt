@@ -64,6 +64,3 @@ The four tabs at the top contain graphics that allow the user to explore the per
 	* Taxonomy: Metrics showing the distribution of taxa in the study, including which matched vs. did not match a BIN.
 	* Table: Additional quantitative metrics about the run
 
-------------------
-Under construction
-------------------

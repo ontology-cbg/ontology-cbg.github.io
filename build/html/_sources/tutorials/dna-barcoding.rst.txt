@@ -116,7 +116,7 @@ Custom mode
 ^^^^^^^^^^^
 
 Open ONTOLOGY and select **DNA Barcoding**. Then, select the **Switch to Advanced Mode** button (S <--> A image) on the right side to launch the advanced used module.
-Because Custom Mode is similar to Kit mode, we encourage you to use your own data to get the most out of this tutorial.  
+Because Custom Mode is similar to Kit mode, we encourage you to use your own data to get the most out of this tutorial.  However, you may also use the provided UMIs file and the test data used for Advanced mode to simulate running your own data. 
     
 1. **PREPARE**
 
@@ -132,6 +132,7 @@ Because Custom Mode is similar to Kit mode, we encourage you to use your own dat
 
         * Note that you MUST provide your own UMI and primer sequences in custom mode. 
         * Example row: Plate ID = 1 (for 96 samples or less), Well ID = B01, Sample ID = Study1_Sample2, Primer Set Name = AR01.
+        * Note: Plate IDs must only be a number, e.g., 2 or 24.
     
     f. Upload Mapping File. Then, for *Metadata*, click 'Download Blank'. 
     g. Fill in the Metadata file, which should correspond with the Mapping file. 
