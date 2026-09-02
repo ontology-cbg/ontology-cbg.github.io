@@ -9,7 +9,7 @@
 project = 'ONTOLOGY'
 copyright = '2025, Centre for Biodiversity Genomics'
 author = 'Emine Ozsahin & Ken A. Thompson'
-release = '0.1'
+release = '0.2'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
