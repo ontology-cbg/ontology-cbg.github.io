@@ -24,7 +24,8 @@ Mapping file
     **Primer Set Name**
         Standard or memorable name for primer set (will be saved)
 
-    **Metabarcoding** workflow only:
+    
+    *Metabarcoding workflow only*:
 
     **Replicate**
         Replicate number for the sample (e.g., 2)
