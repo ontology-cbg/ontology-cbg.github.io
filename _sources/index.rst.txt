@@ -7,12 +7,14 @@ Home
 Introduction
 ============
 
-Welcome to the manual for ONTOLOGY, and end-to-end platform for DNA barcoding and metabarcoding. ONTOLOGY software is designed to work with our freeze-dried PCR microplates, and takes the user from setting up project metadata, through implementation of molecular lab workflows, then finally through bioinformatic analysis and uploading of data to `BOLD`_ (barcoding) or RAMS (metabarcoding; under development).
+Welcome to the manual for ONTOLOGY, an end-to-end platform for **DNA Barcoding** and **Metabarcoding** workflows, including sample preparation, processing, and bioinformatic analysis. 
+The full ONTOLOGY workflow (kit mode) is designed to seamlessly link the laboratory and computational preparation phases by providing freeze-dried PCR microplates, designed specifically for easy sample tracking and direct software input. Users without ONTOLOGY kits may prepare their own plates and still use ONTOLOGY's custom **DNA Barcoding** and **Metabarcoding** bioinformatic analysis pipelines (Custom Mode). For more information on the basics of ONTOLOGY does, please see: :ref:`Basics of ONTOLOGY <about>`
 
-ONTOLOGY contains two workflows: **DNA barcoding** and **metabarcoding**. The DNA barcoding workflow is designed to facilitate sequencing of *individual specimens*. The metabarcoding workflow is designed to facilitate sequencing of *samples containing DNA from many specimens*, including eDNA analysis. The same ONTOLOGY plates can be used for either workflow.
+The **DNA Barcoding** workflow is designed to facilitate sequencing of *individual specimens*. The **Metabarcoding** workflow is designed to facilitate sequencing of *samples containing DNA from many specimens*, including eDNA analysis. The same ONTOLOGY plates can be used for either workflow. For more information on the two workflows, please see: :ref:`Choosing a workflow <FEATURES_OF_BARCODING_AND_METABARCODING>`
 
-Both workflows share a common structure. **PREPARE** establishes the run and sample metadata; **IMPLEMENT** guides the user through molecular laboratory protocols; **ANALYZE** performs bioinformatic analysis and data upload. Both have beginner workflows designed to teach a researchers new to barcoding all aspects of the protocols. They each also have **advanced user** modes, accessible via the [rocket ship symbol]. We note where the protocols diverge. 
+The **DNA Barcoding** and **Metabarcoding** workflows share a common sequence. **PREPARE** establishes the run and sample metadata; **IMPLEMENT** (DNA Barcoding only) guides the user through molecular laboratory protocols; **ANALYZE** performs bioinformatic analysis and data upload to `BOLD`_ (**DNA Barcoding**) or RAMS (**Metabarcoding**; under development). Both have beginner workflows designed to teach a researchers new to barcoding all aspects of the protocols. They each also have **advanced user** modes, accessible via the ONTOLOGY 'DNA double helix' logo. We note where the protocols diverge. For more information on the different modes of ONTOLOGY, please see: :ref:`Choosing a mode <ABOUT_DIFFERENT_MODES>`
 
+For installation requirements, please see: :ref:`Installation <installation>`
 
 
 .. _BOLD: https://boldsystems.org/
@@ -27,13 +29,8 @@ Page tree
     :titlesonly:
     :includehidden:
 
-    about
-    prepare
-    implement
-    analyze
-    tutorial
-    tipstricks
-    troubleshoot
-    contact_us
-    workspace
-    technical
+    getting-started
+    tutorials
+    workflow
+    reference
+    help
