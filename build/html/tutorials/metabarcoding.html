@@ -77,6 +77,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../workflow/analyze.html">Analyze</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../uploading-to-BOLD.html">Uploading to BOLD</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../reference.html">Reference</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../reference/mapping-file.html">Mapping file</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../reference/metadata-file.html">Metadata file</a></li>
@@ -122,6 +123,7 @@
 <span id="tutorial-metabarcoding"></span><h1>Metabarcoding workflow<a class="headerlink" href="#metabarcoding-workflow" title="Link to this heading"></a></h1>
 <p>The <strong>Metabarcoding</strong> tutorial uses example data found ‘here’. Like the <strong>DNA Barcoding</strong> tutorial data, the insects collected by Paul Hebert via Malaise traps in December 2024. A single UMI plate was used, with 30 samples, each replicated three times. We provide test data <em>here</em>, but full PromethION run sequences can be downloaded from <a class="reference external" href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1496812/">NCBI</a> if users wish.</p>
 <p>Open ONTOLOGY and select <strong>Metabarcoding</strong> to access both modes of the <strong>Metabarcoding</strong> Workflow.</p>
+<p>Note: With all modes, please refrain from naming samples with terminology used frequently for controls. These include any capitalization of ‘pos, ‘positive’, ‘’neg’, ‘’negative’, &amp; ‘control’</p>
 <section id="kit-mode">
 <h2>Kit mode<a class="headerlink" href="#kit-mode" title="Link to this heading"></a></h2>
 <ol class="arabic">
@@ -141,9 +143,9 @@
 </li>
 </ol>
 <ol class="loweralpha" start="5">
-<li><p>Select <strong>Upload map</strong> and then select the ‘Metabarcode_tutorial/mapping.xlsx’ file</p></li>
+<li><p>Select <strong>Upload map</strong> and then select the ‘Metabarcode_tutorial/metabarcoding_map.xlsx’ file</p></li>
 <li><p>Accept and proceed past pop-up window that warns of unequal replicate count.</p></li>
-<li><p>Select <strong>Upload Metadata</strong> and then select the ‘Metabarcode_tutorial/metadata.xlsx’ file</p></li>
+<li><p>Select <strong>Upload Metadata</strong> and then select the ‘Metabarcode_tutorial/metabarcoding_metadata.xlsx’ file</p></li>
 <li><p>Click the pencil icon next to <strong>Bioinformatics Parameters</strong> to edit run parameters</p>
 <blockquote>
 <div><ul class="simple">
@@ -204,7 +206,7 @@
 </section>
 <section id="custom-mode">
 <h2>Custom mode<a class="headerlink" href="#custom-mode" title="Link to this heading"></a></h2>
-<p>Custom mode allows the user to deviate from the constraints of the ONTOLOGY kits and users must provide their own primers and UMIs. Since Kit mode is very similar, we encourage users to use their own data for the Custom Mode Tutorial. However, you may also use the provided UMIs file and the test data used for Kit mode to simulate running your own data.</p>
+<p>Custom mode allows the user to deviate from the constraints of the ONTOLOGY kits and users must provide their own primers and UMIs. Since Kit mode is very similar, we encourage users to use their own data for the Custom Mode Tutorial. However, we also provide all the files using a test dataset (‘Metabarcode_custom_tutorial’).</p>
 <ol class="arabic">
 <li><p><strong>PREPARE</strong></p>
 <blockquote>

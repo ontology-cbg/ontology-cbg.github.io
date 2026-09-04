@@ -32,5 +32,6 @@ Page tree
     getting-started
     tutorials
     workflow
+    uploading-to-BOLD
     reference
     help
