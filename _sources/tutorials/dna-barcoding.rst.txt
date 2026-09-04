@@ -11,6 +11,8 @@ Because the 'Implement' stage is hands-on, this tutorial does not go into high l
 
 The advanced user modules simplify **PREPARE**, skip **IMPLEMENT**, and include the full **ANALYZE**. Therefore, the tutorials for the advanced user modules only focus on **PREPARE**.
 
+Note: With all modes, please refrain from naming samples with terminology used frequently for controls. These include any capitalization of 'pos, 'positive', ''neg', ''negative', & 'control'
+
 .. Link to come.
 .. Numbers are not correct
 
@@ -24,7 +26,7 @@ Open ONTOLOGY and select **DNA Barcoding**
 
     a. Select **New Run**
     b. For *Run name*, you can enter anything you'd like, but we suggest **DBC_Full_Tutorial**
-    c. For *Batch ID*, enter exactly **AAAOOO**, and leave the marker as COI and the primer as AR01.
+    c. For *Batch ID*, enter exactly **OAT001**, and leave the marker as COI and the primer as AR01.
     d. Click **Initialize**.
     e. The next three screens indicate the current plate being prepared and provide workflow and specimen information. Click the forward arrow (->) several times to proceed through the workflow until you arrive at the **Array** screen. Here you will see an option to Download a prepared **Metadata Template** file that may be edited and re-uploaded on future uses. For now, you will skip this and we provide a pre-filled out Metadata file to be uploaded on the next screen. Click the forward arrow once more.
 
@@ -75,7 +77,7 @@ Open ONTOLOGY and select **DNA Barcoding**
     d. Explore the various summary metrics and graphs on the next page. 
 
         * You can also find file versions by clicking the **ONTOLOGY Workspace** button on the right side of the screen. 
-        * Select the folder with the batch name assigned (e.g., AAA000), then '{batch name}' -> 'analyze', and you will find all saved ONTOLOGY output files.
+        * Select the folder with the batch name assigned (e.g., OAT001), then '{batch name}' -> 'analyze', and you will find all saved ONTOLOGY output files.
 
     e. On the next page, type your email and the desired BOLD project code and then click **Submit data package** (note, the tutorial data will not go to BOLD)
     f. The *RUN SUMMARY* page summarises the details of the completed run.
@@ -91,12 +93,12 @@ Open ONTOLOGY and select **DNA Barcoding**. [Do not select **New Run** yet]. The
 1. **PREPARE**
 
     a. Click the forward (-->) arrow until the *RUN SETUP* screen. For *Run name*, you can enter anything you'd like, but we suggest 'DBC_Advanced_Tutorial'
-    b. In the *Kit Info* fields, enter **DBC999** as the batch ID and leave the marker as **COI** and the primer as **AR01**. 
+    b. In the *Kit Info* fields, enter **OAT001** as the batch ID and leave the marker as **COI** and the primer as **AR01**. 
     c. Check boxes 1 and 2 for 'Select Plate(s)' to indicate number of plates that are being assessed.
     d. Click Initialize.
-    e. Select upload metadata and then select the 'DNAbarcode_tutorial/metadata' folder
+    e. Select upload metadata and then select the 'DNAbarcode_tutorial/metadata_sheet_for_all.xlsx' file
     f. Select specimen images, then select the 'DNAbarcode_tutorial/specimen_images' folder
-    g. Select 'DNAbarcode_tutorial/array images', then select the  'DNAbarcode_tutorial/specimen_images' folder
+    g. Select 'DNAbarcode_tutorial/array images', then select all files in the folder
     h. To progress to **Analyze**:
         
         * Click the forward arrow

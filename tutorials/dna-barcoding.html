@@ -77,6 +77,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../workflow/analyze.html">Analyze</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../uploading-to-BOLD.html">Uploading to BOLD</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../reference.html">Reference</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../reference/mapping-file.html">Mapping file</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../reference/metadata-file.html">Metadata file</a></li>
@@ -123,6 +124,7 @@
 <p>The <strong>DNA Barcoding</strong> tutorial uses example data found ‘here’. The data are Australian insects collected by Paul Hebert via Malaise traps in December 2024. Two ONTOLOGY plates—UMIs 1 and 2—were prepared and sequenced on an Oxford Nanopore Technologies’ Flongle Flow Cell on a MinION Mk-1d in September 2025. A single .fastq file, containing 17,912 reads, from the run is included for computational efficiency; the full run contained nearly 1M reads and takes 20× longer.</p>
 <p>Because the ‘Implement’ stage is hands-on, this tutorial does not go into high level detail for this stage.</p>
 <p>The advanced user modules simplify <strong>PREPARE</strong>, skip <strong>IMPLEMENT</strong>, and include the full <strong>ANALYZE</strong>. Therefore, the tutorials for the advanced user modules only focus on <strong>PREPARE</strong>.</p>
+<p>Note: With all modes, please refrain from naming samples with terminology used frequently for controls. These include any capitalization of ‘pos, ‘positive’, ‘’neg’, ‘’negative’, &amp; ‘control’</p>
 <section id="standard-mode-with-ontology-kit">
 <h2>Standard mode (with ONTOLOGY kit)<a class="headerlink" href="#standard-mode-with-ontology-kit" title="Link to this heading"></a></h2>
 <p>Open ONTOLOGY and select <strong>DNA Barcoding</strong></p>
@@ -132,7 +134,7 @@
 <div><ol class="loweralpha">
 <li><p>Select <strong>New Run</strong></p></li>
 <li><p>For <em>Run name</em>, you can enter anything you’d like, but we suggest <strong>DBC_Full_Tutorial</strong></p></li>
-<li><p>For <em>Batch ID</em>, enter exactly <strong>AAAOOO</strong>, and leave the marker as COI and the primer as AR01.</p></li>
+<li><p>For <em>Batch ID</em>, enter exactly <strong>OAT001</strong>, and leave the marker as COI and the primer as AR01.</p></li>
 <li><p>Click <strong>Initialize</strong>.</p></li>
 <li><p>The next three screens indicate the current plate being prepared and provide workflow and specimen information. Click the forward arrow (-&gt;) several times to proceed through the workflow until you arrive at the <strong>Array</strong> screen. Here you will see an option to Download a prepared <strong>Metadata Template</strong> file that may be edited and re-uploaded on future uses. For now, you will skip this and we provide a pre-filled out Metadata file to be uploaded on the next screen. Click the forward arrow once more.</p>
 <blockquote>
@@ -205,7 +207,7 @@
 <blockquote>
 <div><ul class="simple">
 <li><p>You can also find file versions by clicking the <strong>ONTOLOGY Workspace</strong> button on the right side of the screen.</p></li>
-<li><p>Select the folder with the batch name assigned (e.g., AAA000), then ‘{batch name}’ -&gt; ‘analyze’, and you will find all saved ONTOLOGY output files.</p></li>
+<li><p>Select the folder with the batch name assigned (e.g., OAT001), then ‘{batch name}’ -&gt; ‘analyze’, and you will find all saved ONTOLOGY output files.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -225,12 +227,12 @@
 <blockquote>
 <div><ol class="loweralpha">
 <li><p>Click the forward (–&gt;) arrow until the <em>RUN SETUP</em> screen. For <em>Run name</em>, you can enter anything you’d like, but we suggest ‘DBC_Advanced_Tutorial’</p></li>
-<li><p>In the <em>Kit Info</em> fields, enter <strong>DBC999</strong> as the batch ID and leave the marker as <strong>COI</strong> and the primer as <strong>AR01</strong>.</p></li>
+<li><p>In the <em>Kit Info</em> fields, enter <strong>OAT001</strong> as the batch ID and leave the marker as <strong>COI</strong> and the primer as <strong>AR01</strong>.</p></li>
 <li><p>Check boxes 1 and 2 for ‘Select Plate(s)’ to indicate number of plates that are being assessed.</p></li>
 <li><p>Click Initialize.</p></li>
-<li><p>Select upload metadata and then select the ‘DNAbarcode_tutorial/metadata’ folder</p></li>
+<li><p>Select upload metadata and then select the ‘DNAbarcode_tutorial/metadata_sheet_for_all.xlsx’ file</p></li>
 <li><p>Select specimen images, then select the ‘DNAbarcode_tutorial/specimen_images’ folder</p></li>
-<li><p>Select ‘DNAbarcode_tutorial/array images’, then select the  ‘DNAbarcode_tutorial/specimen_images’ folder</p></li>
+<li><p>Select ‘DNAbarcode_tutorial/array images’, then select all files in the folder</p></li>
 <li><p>To progress to <strong>Analyze</strong>:</p>
 <blockquote>
 <div><ul class="simple">

@@ -8,6 +8,8 @@ The **Metabarcoding** tutorial uses example data found 'here'. Like the **DNA Ba
 
 Open ONTOLOGY and select **Metabarcoding** to access both modes of the **Metabarcoding** Workflow.
 
+Note: With all modes, please refrain from naming samples with terminology used frequently for controls. These include any capitalization of 'pos, 'positive', ''neg', ''negative', & 'control'
+
 .. Link to come.
 
 ^^^^^^^^
@@ -23,9 +25,9 @@ Kit mode
         * Leave the primer as AR01
         * Click 'Initialize'
 
-    e. Select **Upload map** and then select the 'Metabarcode_tutorial/mapping.xlsx' file
+    e. Select **Upload map** and then select the 'Metabarcode_tutorial/metabarcoding_map.xlsx' file
     f. Accept and proceed past pop-up window that warns of unequal replicate count. 
-    g. Select **Upload Metadata** and then select the 'Metabarcode_tutorial/metadata.xlsx' file
+    g. Select **Upload Metadata** and then select the 'Metabarcode_tutorial/metabarcoding_metadata.xlsx' file
     h. Click the pencil icon next to **Bioinformatics Parameters** to edit run parameters
 
         * Here, adjustments may be made by 
@@ -67,7 +69,7 @@ Kit mode
 ^^^^^^^^^^^
 Custom mode
 ^^^^^^^^^^^
-Custom mode allows the user to deviate from the constraints of the ONTOLOGY kits and users must provide their own primers and UMIs. Since Kit mode is very similar, we encourage users to use their own data for the Custom Mode Tutorial. However, you may also use the provided UMIs file and the test data used for Kit mode to simulate running your own data. 
+Custom mode allows the user to deviate from the constraints of the ONTOLOGY kits and users must provide their own primers and UMIs. Since Kit mode is very similar, we encourage users to use their own data for the Custom Mode Tutorial. However, we also provide all the files using a test dataset ('Metabarcode_custom_tutorial').
 
 1. **PREPARE**
 

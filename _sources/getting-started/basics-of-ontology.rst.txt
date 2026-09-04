@@ -17,3 +17,5 @@ ONTOLOGY workflows are divided into three phases:
 * **ANALYZE:** Analyze sequence data using **DNA Barcoding** or **Metabarcoding** workflows; view run summary; For **DNA Barcoding** - upload barcode sequences and images to repository (BOLD)
 
 If you want to use our example dataset, you should then have a look at the :ref:`Tutorial <tutorial>` section, which provides instructions on how to download this data.
+
+To submit your **DNA Barcoding** data package to BOLD once the run has finished, please refer to :ref:`Uploading to BOLD <BOLD_upload>`.
