@@ -8,7 +8,7 @@
 
 project = 'ONTOLOGY'
 copyright = '2025, Centre for Biodiversity Genomics'
-author = 'Emine Ozsahin & Ken A. Thompson'
+author = 'Emine Ozsahin, Nick Bard, & Ken A. Thompson'
 release = '0.2'
 
 # -- General configuration ---------------------------------------------------

@@ -1,8 +1,8 @@
 .. _about:
 
-================
+==================
 Basics of ONTOLOGY
-================
+==================
 
 ONTOLOGY is an end-to-end platform for **DNA Barcoding** and **Metabarcoding** workflows, which include sample preparation, processing, and bioinformatic analysis. 
 
