@@ -22,7 +22,7 @@ Once DNA Barcoding upload has ended, we encourage you to upload the data package
     2. Click the **Download Specimen Data Batch Submission File** and fill in any blank cells with any information that you want to include. Removing data will trigger an error upon uploading the data package.
     3. Click the **Upload Specimen Data Batch Submission File** and select your updated file.
     4. Enter the email address that is linked to your BOLD account in the **Contact Email** field.
-    5. Enter the exact 3-5 digit **Bold Project Code** as used on the `BOLD`_ website.
+    5. Enter the exact 3-5 digit **BOLD Project Code** as used on the `BOLD`_ website.
     6. Click the **Submit Data Package** button. It will take some time to complete and issue a popup window when the data package has successfully completed. 
     7. That's it! Thank you for using BOLD!
 
