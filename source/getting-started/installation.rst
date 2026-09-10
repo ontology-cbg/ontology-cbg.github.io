@@ -9,24 +9,33 @@ Software requirements
 ---------------------
 
 ^^^^^
+All systems
+^^^^^
+
+* 12+ GB RAM, more for larger runs
+
+
+^^^^^
 macOS
 ^^^^^
 
-* macOS 15 (Sequoia) and above
-* 16 GB RAM
+* macOS 26.6.2 (or above)
+
 
 ^^^^^^^
 Windows
 ^^^^^^^
 
-[Need info]
+* Windows 11 
+* x64-based processor
 
 ^^^^^
 Linux
 ^^^^^
 
-[Need info]
+* Ubuntu 34.0.0
 
+**Note for all:** We cannot guarantee optimal ONTOLOGY performance if run using earlier versions of each operating system.
 
 ------------
 Installation
@@ -43,10 +52,10 @@ macOS
 Windows
 ^^^^^^^
 
-Not currently supported
+(in progress)
 
 ^^^^^
 Linux
 ^^^^^
 
-Not currently supported
+(in progress)
