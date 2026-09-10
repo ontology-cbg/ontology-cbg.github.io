@@ -6,6 +6,8 @@
 Uploading to BOLD
 =================
 
+**Note: For DNA Barcoding workflow only**
+
 Once DNA Barcoding upload has ended, we encourage you to upload the data package to `BOLD`_. Many of the steps can be completed in ONTOLOGY, however some steps must be completed on the `BOLD`_ website.
 
 **The following must be completed prior to data package upload:**

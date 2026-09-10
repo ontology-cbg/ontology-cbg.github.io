@@ -114,3 +114,75 @@
     color: #1b5e88;
     font-weight: 600;
 }
+
+/* ---- Sidebar brand: ONTOLOGY wordmark + "by CBG" (see _templates/layout.html) ---- */
+
+.wy-side-nav-search > a.site-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+}
+
+/* The theme's generic `.wy-side-nav-search img` rule forces every sidebar
+   image into a 45px blue circle; this out-specifies it. */
+.wy-side-nav-search > a.site-brand img.site-brand__logo {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+}
+
+/* Inherits the theme's brand colour/weight from .wy-side-nav-search a. */
+.site-brand__by {
+    white-space: nowrap;
+}
+
+/* ---- ONTOLOGY icon centred in the breadcrumb bar (see _templates/breadcrumbs.html) ---- */
+
+.wy-breadcrumbs {
+    position: relative;
+}
+
+.wy-breadcrumbs li.breadcrumb-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.wy-breadcrumbs li.breadcrumb-icon img {
+    height: 28px;
+    width: auto;
+    display: block;
+}
+
+/* No room to centre an icon over a narrow bar. */
+@media (max-width: 768px) {
+    .wy-breadcrumbs li.breadcrumb-icon { display: none; }
+}
+
+/* ---- Footer: CBG logo + copyright (see _templates/footer.html) ---- */
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+}
+
+.footer-brand__logo {
+    width: 200px;
+    height: auto;
+}
+
+.footer-brand__copyright {
+    margin: 0;
+}
