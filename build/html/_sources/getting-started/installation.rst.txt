@@ -8,9 +8,9 @@ Installation
 Software requirements
 ---------------------
 
-^^^^^
+^^^^^^^^^^^
 All systems
-^^^^^
+^^^^^^^^^^^
 
 * 12+ GB RAM, more for larger runs
 
@@ -33,7 +33,8 @@ Windows
 Linux
 ^^^^^
 
-* Ubuntu 34.0.0
+* Ubuntu 24.04 (or above)
+* glibc 2.39 (or above)
 
 **Note for all:** We cannot guarantee optimal ONTOLOGY performance if run using earlier versions of each operating system.
 
@@ -58,4 +59,9 @@ Windows
 Linux
 ^^^^^
 
-(in progress)
+Please run the following from the directory holding the .deb file:
+
+sudo apt install ./Ontology_<VERSION_NUMBER>_amd64.deb
+
+Uninstall:
+sudo apt remove ontology

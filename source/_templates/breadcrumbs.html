@@ -1,0 +1,12 @@
+{% extends "!breadcrumbs.html" %}
+
+{#
+  ONTOLOGY icon centred in the breadcrumb bar, between the Home icon on the
+  left and the "View page source" link on the right. Styling: _static/custom.css
+#}
+{% block breadcrumbs %}
+  {{ super() }}
+  <li class="breadcrumb-icon">
+    <img src="{{ pathto('_static/ONTOLOGY_iconTM.png', 1) }}" alt="ONTOLOGY"/>
+  </li>
+{% endblock %}

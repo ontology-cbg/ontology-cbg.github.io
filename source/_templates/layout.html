@@ -15,3 +15,16 @@
   </nav>
   {%- endif %}
 {% endblock %}
+
+{#
+  Sidebar brand: ONTOLOGY wordmark + "by CBG" in the theme's own brand font.
+  Replaces the plain "ONTOLOGY" text link. Styling: _static/custom.css
+#}
+{% block sidebartitle %}
+  <a href="{{ pathto(root_doc|default(master_doc)) }}" class="site-brand">
+    <img src="{{ pathto('_static/ONTOLOGY_logo_TM-scaled-250x58.png', 1) }}"
+         class="site-brand__logo" alt="ONTOLOGY"/>
+    <span class="site-brand__by">by CBG</span>
+  </a>
+  {%- include "searchbox.html" %}
+{% endblock %}

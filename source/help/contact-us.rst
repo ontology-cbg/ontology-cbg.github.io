@@ -12,4 +12,3 @@ Troubleshooting: support@ontology.bio
 
 Development team: dev@ontology.bio
 
-(Under construction)

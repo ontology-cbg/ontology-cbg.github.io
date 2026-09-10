@@ -1,0 +1,14 @@
+{% extends "!footer.html" %}
+
+{#
+  Footer: CBG logo above the copyright line. Styling: _static/custom.css
+#}
+{% block contentinfo %}
+  <div class="footer-brand">
+    <img src="{{ pathto('_static/CBG-logo-1024x421.png', 1) }}"
+         class="footer-brand__logo" alt="Centre for Biodiversity Genomics"/>
+    {%- if show_copyright %}
+    <p class="footer-brand__copyright">&#169; Copyright {{ copyright|e }}.</p>
+    {%- endif %}
+  </div>
+{% endblock %}
