@@ -12,7 +12,7 @@ BUILDDIR      = build
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-.PHONY: help Makefile
+.PHONY: help Makefile publish
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
@@ -20,6 +20,11 @@ help:
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 
-github:
-	@make html
-	@cp -a build/html/. ../docs
+publish:
+	@test -n "$(M)" || { echo "usage: make publish M=<message>"; exit 1; }
+	@make html O="-E"
+	@git add -A
+	@git commit -m "$(M)"
+	@git push ontology main
+	@ghp-import -n -m "$(M)" -b gh-pages build/html
+	@git push ontology gh-pages

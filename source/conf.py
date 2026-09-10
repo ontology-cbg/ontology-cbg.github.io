@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'ONTOLOGY'
-copyright = '2025, Centre for Biodiversity Genomics'
+copyright = '2026, Centre for Biodiversity Genomics'
 author = 'Emine Ozsahin, Nick Bard, & Ken A. Thompson'
 release = '0.2'
 
