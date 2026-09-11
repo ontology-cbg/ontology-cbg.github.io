@@ -17,3 +17,5 @@ The tutorials will walk you through ONTOLOGY's :ref:`DNA Barcoding <TUTORIAL_DNA
 The tutorials are organised by **workflow** — follow the one that matches your
 study. The :ref:`Workflow guide <workflow>` covers the same ground organised by
 stage, for reference once you are running your own data.
+
+Demo data to run the tutorials can be found on the `ONTOLOGY demo data page <https://zenodo.org/records/22283662>`_.

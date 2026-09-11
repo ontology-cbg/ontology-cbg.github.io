@@ -4,7 +4,7 @@
 Metabarcoding workflow
 ======================
 
-The **Metabarcoding** tutorial uses example data found 'here'. Like the **DNA Barcoding** tutorial data, the insects collected by Paul Hebert via Malaise traps in December 2024. A single UMI plate was used, with 30 samples, each replicated three times. We provide test data *here*, but full PromethION run sequences can be downloaded from `NCBI <https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1496812/>`_ if users wish.
+The **Metabarcoding** tutorial uses example data found on the `ONTOLOGY demo data page <https://zenodo.org/records/22283662>`_. Like the **DNA Barcoding** tutorial data, the insects collected by Paul Hebert via Malaise traps in December 2024. A single UMI plate was used, with 30 samples, each replicated three times. We provide test data *here*, but full PromethION run sequences can be downloaded from `NCBI <https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1496812/>`_ if users wish.
 
 Open ONTOLOGY and select **Metabarcoding** to access both modes of the **Metabarcoding** Workflow.
 
