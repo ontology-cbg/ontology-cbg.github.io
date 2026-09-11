@@ -5,7 +5,7 @@ DNA Barcoding workflow
 ======================
 
 
-The **DNA Barcoding** tutorial uses example data found 'here'. The data are Australian insects collected by Paul Hebert via Malaise traps in December 2024. Two ONTOLOGY plates—UMIs 1 and 2—were prepared and sequenced on an Oxford Nanopore Technologies' Flongle Flow Cell on a MinION Mk-1d in September 2025. A single .fastq file, containing 17,912 reads, from the run is included for computational efficiency; the full run contained nearly 1M reads and takes 20× longer. 
+The **DNA Barcoding** tutorial uses example data found on the `ONTOLOGY demo data page <https://zenodo.org/records/22283662>`_. The data are Australian insects collected by Paul Hebert via Malaise traps in December 2024. Two ONTOLOGY plates—UMIs 1 and 2—were prepared and sequenced on an Oxford Nanopore Technologies' Flongle Flow Cell on a MinION Mk-1d in September 2025. A single .fastq file, containing 17,912 reads, from the run is included for computational efficiency; the full run contained nearly 1M reads and takes 20× longer. 
 
 Because the 'Implement' stage is hands-on, this tutorial does not go into high level detail for this stage. 
 
