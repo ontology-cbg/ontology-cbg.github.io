@@ -17,7 +17,7 @@ Kit mode
 ^^^^^^^^
 1. **PREPARE**
 
-    a. Click the forward (-->) arrow until the *RUN SETUP* screen. For *Run name*, you can enter anything you'd like, but we suggest 'DBC_Meta_Tutorial'
+    a. Click the forward (-->) arrow until the *RUN SETUP* screen. 
     b. Enter the *Run name*, which can be anything you'd like, but we suggest 'DBC_Meta_Custom_Tutorial'
     c. In the **Kit Info** fields, enter **AAA000** as the batch ID
 
@@ -25,30 +25,32 @@ Kit mode
         * Leave the primer as AR01
         * Click 'Initialize'
 
-    e. Select **Upload map** and then select the 'Metabarcode_tutorial/metabarcoding_map.xlsx' file
+    e. Select **Upload map** and then select the 'Metabarcode_kit_mode_tutorial/metabarcoding_map.xlsx' file
     f. Accept and proceed past pop-up window that warns of unequal replicate count. 
-    g. Select **Upload Metadata** and then select the 'Metabarcode_tutorial/metabarcoding_metadata.xlsx' file
-    h. Click the pencil icon next to **Bioinformatics Parameters** to edit run parameters
+    g. Click 'Download Blank' next to *Metadata*. Please take a moment to download and review the file. 
+    For now, you do not need to change this file, but it may be used to compare with the completed Metadata files we have provided (**metadata_sheet_for_all.xlsx**)
+    h. Select **Upload Metadata** and then select the 'Metabarcode_kit_mode_tutorial/metabarcoding_metadata.xlsx' file
+    i. Click the pencil icon next to **Bioinformatics Parameters** to edit run parameters
 
         * Here, adjustments may be made by 
             (1, recommended) clicking **Download Bulk Input File**, editing + saving, and then clicking **Upload Bulk input file**; or 
-            (2), changing the parameters on the ONTOLOGY window. 
+            (2) changing the parameters on the ONTOLOGY window. 
         * It is recommended to first run with the default values, but to examine the Bulk Input Files structure to aid with your later analyses. 
         * A guide to the parameters is available in the *PREPARE* document of the ONTOLOGY tutorial.
 
-    i.  To progress to the *RUN SUMMARY* screen:
+    j.  To progress to the *RUN SUMMARY* screen:
 
         * Click **Go Back**
         * Then click forward arrow
 
-    j. On the *RUN SUMMARY* screen, you can see how the samples are setup via the mapping file. 
+    k. On the *RUN SUMMARY* screen, you can see how the samples are setup via the mapping file. 
 
         *Click on one of the cells to view/edit metadata and sample information. 
         *Then, click **Proceed to Analyze**
 
 2. **ANALYZE**
 
-    a. Click **Choose Folder** and choose 'Metabarcode_tutorial/' directory, which holds the fastq file. 
+    a. Click **Choose Folder** and choose 'Metabarcode_kit_mode_tutorial/' directory, which holds the fastq file. 
 
         * Make sure that 'Run the complete analysis workflow' is selected.
         * Click forward arrow. 
@@ -92,7 +94,8 @@ Custom mode allows the user to deviate from the constraints of the ONTOLOGY kits
     f. Then, for 'Metadata', click 'Download Template'. 
 
         * Note: It is important to upload the Mapping file first, as this information is used to construct the Metadata template file.
-        * Fill in *Metadata* spreadsheet and upload file.
+        * Fill in *Metadata* spreadsheet and upload file. 
+        * Do not change 'Sample ID' or 'Custom ID' fields.
 
     g. Click the pencil icon next to **Bioinformatics Parameters** to edit run parameters
 

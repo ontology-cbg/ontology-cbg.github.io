@@ -13,9 +13,6 @@ The advanced user modules simplify **PREPARE**, skip **IMPLEMENT**, and include 
 
 Note: With all modes, please refrain from naming samples with terminology used frequently for controls. These include any capitalization of 'pos, 'positive', ''neg', ''negative', & 'control'
 
-.. Link to come.
-.. Numbers are not correct
-
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Standard mode (with ONTOLOGY kit)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -28,24 +25,39 @@ Open ONTOLOGY and select **DNA Barcoding**
     b. For *Run name*, you can enter anything you'd like, but we suggest **DBC_Full_Tutorial**
     c. For *Batch ID*, enter exactly **OAT001**, and leave the marker as COI and the primer as AR01.
     d. Click **Initialize**.
-    e. The next three screens indicate the current plate being prepared and provide workflow and specimen information. Click the forward arrow (->) several times to proceed through the workflow until you arrive at the **Array** screen. Here you will see an option to Download a prepared **Metadata Template** file that may be edited and re-uploaded on future uses. For now, you will skip this and we provide a pre-filled out Metadata file to be uploaded on the next screen. Click the forward arrow once more.
+    e. The next three screens indicate the current plate being prepared and provide workflow and specimen information. Click the forward arrow (->) several times to proceed through the workflow until you arrive at the **Array** screen. Here you will see an option to Download a prepared **Metadata Template** file that may be edited and re-uploaded on future uses. Please take a moment to download and review the file. 
+    For now, you do not need to change this file, but it may be used to compare with the completed Metadata files we have provided (**metadata_sheet_for_01.xlsx**), which will be used for upload on the next screen. Click the forward arrow once more.
 
         * Select **Choose File**
-        * Navigate to 'DNAbarcode_tutorial/metadata'
+        * Navigate to 'DNAbarcode_standard_tutorial/metadata'
         * Select **metadata_sheet_for_01.xlsx** 
         * Confirm all details are correct (95 specimens; 1 negative control; 95 specimens with complete data) and then click the forward arrow.
+
+    **REQUIREMENTS FOR THE METADATA:**
+        Upon using your own data, you will need to edit the metadata sheet yourself. After downloading the template metadata sheet.
+        **Required Fields:**
+        * *Sample ID:* Do not make any changes to data in the *Sample ID* field.
+        * *Custom ID:* Provide a memorable 'working name' to each cell in the *Custom ID* field. This may match the naming convention you have used for sample collection and organization. 
+        The only requirement is that these must be unique identifiers for each row (e.g., 1,2,3...).
+        * *Kingdom/Phylum/Class/Order* fields: Change these fields as needed to represent what is known about your samples. For taxonomic inference, all fields up to *Order* must be filled in.
+        * *Country*: Enter country name only.
+        * *All fields:* For each plate, Well H12 is designated as the Negative Control well. The Negative Control must remain blank for all fields, excluding *Sample ID*.
+        
+        **Optional fields:** We highly recommend that you fill out the *Collectors, Collection Date, Latitude,* and *Longitude* fields, though they are not required for ONTOLOGY to run.
+        Please refer to the provided **metadata_sheet_for_01.xlsx** for suggested formatting.
+
 
     f. The next screen provides a downloadable Sampling Protocol, which is optional for review. Continue past this screen, and click the forward arrow until you arrive at *Label*. Here we will upload an array image. This is optional but encouraged as it allows for improved error checking.
         
         * Select **Upload Array Image**
-        * Navigate to 'DNAbarcode_tutorial/array_images'
+        * Navigate to 'DNAbarcode_standard_tutorial/array_images'
         * Select **array_01.jpg** 
         * Note: this image is from a separate project but was chosen because it contains pinned insects; most users would not upload an array photo of a microplate.
 
     g. Select the forward arrow to proceed to *PHOTOGRAPH*
 
         * Select **Upload photographs**
-        * Navigate to 'DNAbarcode_tutorial/specimen_images'
+        * Navigate to 'DNAbarcode_standard_tutorial/specimen_images'
         * Select the folder, 'plate1', then click Open
         * Verify the number of images is correct (95 images uploaded), then click the forward arrow
 
@@ -65,7 +77,7 @@ Open ONTOLOGY and select **DNA Barcoding**
 
         * Make sure that the **Run the complete analysis workflow** is selected.
         * Select **Choose Folder**
-        * Navigate to 'DNAbarcode_tutorial/fastq_file' and 'open' that folder
+        * Navigate to 'DNAbarcode_standard_tutorial/fastq_file' and 'open' that folder
         * Verify that the number of .fastq files is correct (1) and the number of reads is 17,912 then click forward arrow
 
     b. In **Select Reference Library**:
@@ -95,10 +107,27 @@ Open ONTOLOGY and select **DNA Barcoding**. [Do not select **New Run** yet]. The
     a. Click the forward (-->) arrow until the *RUN SETUP* screen. For *Run name*, you can enter anything you'd like, but we suggest 'DBC_Advanced_Tutorial'
     b. In the *Kit Info* fields, enter **OAT001** as the batch ID and leave the marker as **COI** and the primer as **AR01**. 
     c. Check boxes 1 and 2 for 'Select Plate(s)' to indicate number of plates that are being assessed.
-    d. Click Initialize.
-    e. Select upload metadata and then select the 'DNAbarcode_tutorial/metadata_sheet_for_all.xlsx' file
-    f. Select specimen images, then select the 'DNAbarcode_tutorial/specimen_images' folder
-    g. Select 'DNAbarcode_tutorial/array images', then select all files in the folder
+    d. Click 'Initialize'.
+    e. Click 'Download Blank' next to *Metadata*. Please take a moment to download and review the file. 
+    For now, you do not need to change this file, but it may be used to compare with the completed Metadata files we have provided (**metadata_sheet_for_all.xlsx**), which will be used for upload on the next screen. Click the forward arrow once more.
+    
+
+        **REQUIREMENTS FOR THE METADATA:**
+        Upon using your own data, you will need to edit the metadata sheet yourself. After downloading the template metadata sheet.
+        **Required Fields:**
+        * *Sample ID:* Do not make any changes to data in the *Sample ID* field.
+        * *Custom ID:* Provide a memorable 'working name' to each cell in the *Custom ID* field. This may match the naming convention you have used for sample collection and organization. 
+        The only requirement is that these must be unique identifiers for each row (e.g., 1,2,3...).
+        * *Kingdom/Phylum/Class/Order* fields: Change these fields as needed to represent what is known about your samples. For taxonomic inference, all fields up to *Order* must be filled in.
+        * *Country*: Enter country name only.
+        * *All fields:* For each plate, Well H12 is designated as the Negative Control well. The Negative Control must remain blank for all fields, excluding *Sample ID*.
+        
+        **Optional fields:** We highly recommend that you fill out the *Collectors, Collection Date, Latitude,* and *Longitude* fields, though they are not required for ONTOLOGY to run.
+        Please refer to the provided **metadata_sheet_for_all.xlsx** for suggested formatting.
+
+    f. Select 'Upload Metadata' and then select the 'DNAbarcode_advanced_tutorial/metadata_sheet_for_all.xlsx' file we provided (not the ONTOLOGY-generated template you downloaded)
+    g. Select specimen images, then select the 'DNAbarcode_advanced_tutorial/specimen_images' folder
+    g. Select 'DNAbarcode_advanced_tutorial/array images', then select all files in the folder
     h. To progress to **Analyze**:
         
         * Click the forward arrow
@@ -118,7 +147,7 @@ Custom mode
 ^^^^^^^^^^^
 
 Open ONTOLOGY and select **DNA Barcoding**. Then, select the **Switch to Advanced Mode** button (S <--> A image) on the right side to launch the advanced used module.
-Because Custom Mode is similar to Kit mode, we encourage you to use your own data to get the most out of this tutorial.  However, you may also use the provided UMIs file and the test data used for Advanced mode to simulate running your own data. 
+Because Custom Mode is similar to Kit mode, we encourage you to use your own data to get the most out of this tutorial.  However, you may also use the data provided in 'DNAbarcode_custom_tutorial' to simulate running your own data. 
     
 1. **PREPARE**
 
@@ -137,7 +166,7 @@ Because Custom Mode is similar to Kit mode, we encourage you to use your own dat
         * Note: Plate IDs must only be a number, e.g., 2 or 24.
     
     f. Upload Mapping File. Then, for *Metadata*, click 'Download Blank'. 
-    g. Fill in the Metadata file, which should correspond with the Mapping file. 
+    g. Fill in the Metadata file, which should correspond with the Mapping file. NOTE: do not change the Sample ID or Custom ID fields. The Kingdom/Phylum/Class/Order fields are required for taxonomic inference. 
     h. Upload Metadata File.
     i. Click the writing icon next to **Bioinformatics Parameters**.
     j. [Advised] **Download Bulk Input** file, check for correctness, make any necessary edits, and re-upload using **Upload Bulk Input file** button. 
