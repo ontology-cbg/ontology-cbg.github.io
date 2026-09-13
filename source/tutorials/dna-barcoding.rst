@@ -26,45 +26,47 @@ Open ONTOLOGY and select **DNA Barcoding**
     c. For *Batch ID*, enter exactly **OAT001**, and leave the marker as COI and the primer as AR01.
     d. Click **Initialize**.
     e. The next three screens indicate the current plate being prepared and provide workflow and specimen information. Click the forward arrow (->) several times to proceed through the workflow until you arrive at the **Array** screen. Here you will see an option to Download a prepared **Metadata Template** file that may be edited and re-uploaded on future uses. Please take a moment to download and review the file. 
-    For now, you do not need to change this file, but it may be used to compare with the completed Metadata files we have provided (**metadata_sheet_for_01.xlsx**), which will be used for upload on the next screen. Click the forward arrow once more.
+    For now, you do not need to change this file, but it may be used to compare with the completed Metadata files we have provided (**metadata_sheet_for_01.xlsx**), which will be used for upload on the next screen. 
+
+        **REQUIREMENTS FOR THE METADATA SHEET:**
+        Upon using your own data, you will need to edit the metadata sheet yourself. After downloading the template metadata sheet.
+        **Required Fields:**
+        
+        * **Sample ID:** Do not make any changes to data in the *Sample ID* field.
+        * **Custom ID:** Provide a memorable 'working name' to each cell in the *Custom ID* field. This may match the naming convention you have used for sample collection and organization. 
+        The only requirement is that these must be unique identifiers for each row (e.g., 1,2,3...).
+        * **Kingdom/Phylum/Class/Order** fields: Change these fields as needed to represent what is known about your samples. For taxonomic inference, all fields up to *Order* must be filled in.
+        * **Country:** Enter country name only.
+        * **All fields:** For each plate, Well H12 is designated as the Negative Control well. The Negative Control must remain blank for all fields, excluding *Sample ID*.
+        
+        **Optional fields:** We highly recommend that you fill out the *Collectors, Collection Date, Latitude,* and *Longitude* fields, though they are not required for ONTOLOGY to run.
+        Please refer to the provided **metadata_sheet_for_01.xlsx** for suggested formatting.
+
+    f. Click the forward arrow once more to uploade prepared metadata file.
 
         * Select **Choose File**
         * Navigate to 'DNAbarcode_standard_tutorial/metadata'
         * Select **metadata_sheet_for_01.xlsx** 
         * Confirm all details are correct (95 specimens; 1 negative control; 95 specimens with complete data) and then click the forward arrow.
 
-    **REQUIREMENTS FOR THE METADATA:**
-        Upon using your own data, you will need to edit the metadata sheet yourself. After downloading the template metadata sheet.
-        **Required Fields:**
-        * *Sample ID:* Do not make any changes to data in the *Sample ID* field.
-        * *Custom ID:* Provide a memorable 'working name' to each cell in the *Custom ID* field. This may match the naming convention you have used for sample collection and organization. 
-        The only requirement is that these must be unique identifiers for each row (e.g., 1,2,3...).
-        * *Kingdom/Phylum/Class/Order* fields: Change these fields as needed to represent what is known about your samples. For taxonomic inference, all fields up to *Order* must be filled in.
-        * *Country*: Enter country name only.
-        * *All fields:* For each plate, Well H12 is designated as the Negative Control well. The Negative Control must remain blank for all fields, excluding *Sample ID*.
-        
-        **Optional fields:** We highly recommend that you fill out the *Collectors, Collection Date, Latitude,* and *Longitude* fields, though they are not required for ONTOLOGY to run.
-        Please refer to the provided **metadata_sheet_for_01.xlsx** for suggested formatting.
-
-
-    f. The next screen provides a downloadable Sampling Protocol, which is optional for review. Continue past this screen, and click the forward arrow until you arrive at *Label*. Here we will upload an array image. This is optional but encouraged as it allows for improved error checking.
+    g. The next screen provides a downloadable Sampling Protocol, which is optional for review. Continue past this screen, and click the forward arrow until you arrive at *Label*. Here we will upload an array image. This is optional but encouraged as it allows for improved error checking.
         
         * Select **Upload Array Image**
         * Navigate to 'DNAbarcode_standard_tutorial/array_images'
         * Select **array_01.jpg** 
         * Note: this image is from a separate project but was chosen because it contains pinned insects; most users would not upload an array photo of a microplate.
 
-    g. Select the forward arrow to proceed to *PHOTOGRAPH*
+    h. Select the forward arrow to proceed to *PHOTOGRAPH*
 
         * Select **Upload photographs**
         * Navigate to 'DNAbarcode_standard_tutorial/specimen_images'
         * Select the folder, 'plate1', then click Open
         * Verify the number of images is correct (95 images uploaded), then click the forward arrow
 
-    h. Review the Plate Summary page. The user can use the 'Edit' buttons to make changes to the metadata, if desired.
-    i. Select "Yes, add another plate (repeat Prepare Specimens)"
-    j. Repeat Steps **f** to **i** above, but choose **metadata_sheet_for_02.xlsx**, **array_02.jpg**, and the images in the 'plate2' older.
-    k. Review the summary sheet—all wells on both plates should be green—and then select **No, all specimens processed**.
+    i. Review the Plate Summary page. The user can use the 'Edit' buttons to make changes to the metadata, if desired.
+    j. Select "Yes, add another plate (repeat Prepare Specimens)"
+    k. Repeat Steps **f** to **i** above, but choose **metadata_sheet_for_02.xlsx**, **array_02.jpg**, and the images in the 'plate2' older.
+    l. Review the summary sheet—all wells on both plates should be green—and then select **No, all specimens processed**.
 
 2. **IMPLEMENT**
 
@@ -109,26 +111,27 @@ Open ONTOLOGY and select **DNA Barcoding**. [Do not select **New Run** yet]. The
     c. Check boxes 1 and 2 for 'Select Plate(s)' to indicate number of plates that are being assessed.
     d. Click 'Initialize'.
     e. Click 'Download Blank' next to *Metadata*. Please take a moment to download and review the file. 
-    For now, you do not need to change this file, but it may be used to compare with the completed Metadata files we have provided (**metadata_sheet_for_all.xlsx**), which will be used for upload on the next screen. Click the forward arrow once more.
+    For now, you do not need to change this file, but it may be used to compare with the completed Metadata files we have provided (**metadata_sheet_for_all.xlsx**), which will be used for upload on the next screen. 
     
-
-        **REQUIREMENTS FOR THE METADATA:**
+        **REQUIREMENTS FOR THE METADATA SHEET:**
         Upon using your own data, you will need to edit the metadata sheet yourself. After downloading the template metadata sheet.
         **Required Fields:**
-        * *Sample ID:* Do not make any changes to data in the *Sample ID* field.
-        * *Custom ID:* Provide a memorable 'working name' to each cell in the *Custom ID* field. This may match the naming convention you have used for sample collection and organization. 
+
+        * **Sample ID:** Do not make any changes to data in the *Sample ID* field.
+        * **Custom ID:** Provide a memorable 'working name' to each cell in the *Custom ID* field. This may match the naming convention you have used for sample collection and organization. 
         The only requirement is that these must be unique identifiers for each row (e.g., 1,2,3...).
-        * *Kingdom/Phylum/Class/Order* fields: Change these fields as needed to represent what is known about your samples. For taxonomic inference, all fields up to *Order* must be filled in.
-        * *Country*: Enter country name only.
-        * *All fields:* For each plate, Well H12 is designated as the Negative Control well. The Negative Control must remain blank for all fields, excluding *Sample ID*.
+        * **Kingdom/Phylum/Class/Order** fields: Change these fields as needed to represent what is known about your samples. For taxonomic inference, all fields up to *Order* must be filled in.
+        * **Country** Enter country name only.
+        * **All fields:** For each plate, Well H12 is designated as the Negative Control well. The Negative Control must remain blank for all fields, excluding *Sample ID*.
         
         **Optional fields:** We highly recommend that you fill out the *Collectors, Collection Date, Latitude,* and *Longitude* fields, though they are not required for ONTOLOGY to run.
         Please refer to the provided **metadata_sheet_for_all.xlsx** for suggested formatting.
 
-    f. Select 'Upload Metadata' and then select the 'DNAbarcode_advanced_tutorial/metadata_sheet_for_all.xlsx' file we provided (not the ONTOLOGY-generated template you downloaded)
-    g. Select specimen images, then select the 'DNAbarcode_advanced_tutorial/specimen_images' folder
-    g. Select 'DNAbarcode_advanced_tutorial/array images', then select all files in the folder
-    h. To progress to **Analyze**:
+    f. Click the forward arrow once more.
+    g. Select 'Upload Metadata' and then select the 'DNAbarcode_advanced_tutorial/metadata_sheet_for_all.xlsx' file we provided (not the ONTOLOGY-generated template you downloaded)
+    h. Select specimen images, then select the 'DNAbarcode_advanced_tutorial/specimen_images' folder
+    i. Select 'DNAbarcode_advanced_tutorial/array images', then select all files in the folder
+    j. To progress to **Analyze**:
         
         * Click the forward arrow
         * Then review the Run Summary. 
