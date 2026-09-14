@@ -33,8 +33,8 @@ Windows
 Linux
 ^^^^^
 
-* Ubuntu 24.04 (or above)
-* glibc 2.39 (or above)
+* Ubuntu 24.04 (Ubuntu 26.04 coming soon)
+* glibc 2.39 
 
 **Note for all:** We cannot guarantee optimal ONTOLOGY performance if run using earlier versions of each operating system.
 
@@ -53,7 +53,9 @@ macOS
 Windows
 ^^^^^^^
 
-(in progress)
+* Double-click the Ontology_<>.exe file. 
+* Walk through the install steps
+* If a warning from Windows pops up, click 'More Info', then click 'Run Anyway'.
 
 ^^^^^
 Linux
