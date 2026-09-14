@@ -9,7 +9,7 @@
 project = 'ONTOLOGY'
 copyright = '2026, Centre for Biodiversity Genomics'
 author = 'Emine Ozsahin, Nick Bard, & Ken A. Thompson'
-release = '0.2'
+release = '1.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -33,7 +33,7 @@ exclude_patterns = []
 #https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html
 #https://github.com/readthedocs/sphinx_rtd_theme?tab=readme-ov-file
 #master_doc = 'index'
-#html_title = "ONTOLOGY"
+html_title = "ONTOLOGY Manual"
 html_theme = "sphinx_rtd_theme"
 
 # Sidebar: keep every child page expanded and visible at all times
