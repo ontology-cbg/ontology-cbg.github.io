@@ -19,12 +19,13 @@ Kit mode
 
     a. Click the forward (-->) arrow until the *RUN SETUP* screen. 
     b. Enter the *Run name*, which can be anything you'd like, but we suggest 'DBC_Meta_Custom_Tutorial'
-    c. In the **Kit Info** fields, enter **AAA000** as the batch ID
+    c. In the **Kit Info** fields, enter **AAA000** as the batch ID. 
 
         * Leave the marker as COI
         * Leave the primer as AR01
         * Click 'Initialize'
-
+    
+    d. For the **Select Plate(s)** boxes, select '4', '5', and '6'. 
     e. Select **Upload map** and then select the 'Metabarcode_kit_mode_tutorial/metabarcoding_map.xlsx' file
     f. Accept and proceed past pop-up window that warns of unequal replicate count. 
     g. Click 'Download Blank' next to *Metadata*. Please take a moment to download and review the file. 
